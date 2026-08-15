@@ -67,6 +67,8 @@ Third-party catalogs and awesome lists are primarily used for discovery.
 
 Missing metadata is not guessed.
 
+Before an entry is listed, the data itself is inspected rather than only its description: the files are located and opened, the Turkish content is confirmed by reading actual samples, and the license is read where the data is distributed. A language tag, a split named after a language, or a figure repeated by another catalog is treated as a claim to be checked, not as evidence.
+
 ### 5. Independent Gap Search
 
 After existing catalogs have been consolidated and deduplicated, additional searches are performed to find datasets that may have been missed.

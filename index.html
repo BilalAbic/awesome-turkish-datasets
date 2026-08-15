@@ -378,7 +378,7 @@
 </head>
 <body>
   <noscript>
-    <div class="noscript">This catalog needs JavaScript to read and filter <code>README.md</code>.</div>
+    <div class="noscript">This catalog needs JavaScript to search and filter.</div>
   </noscript>
 
   <main class="page" id="app" hidden>
@@ -432,7 +432,7 @@
 
     <div class="result-line" aria-live="polite">
       <span id="resultCount">Loading catalog…</span>
-      <span id="activeHint">Data source: README.md</span>
+      <span id="activeHint">All datasets</span>
     </div>
 
     <section class="table-wrap" aria-label="Dataset catalog">
@@ -458,7 +458,7 @@
     </section>
 
     <footer>
-      <span>The website reads the repository's <code>README.md</code> directly. No separate dataset file is required.</span>
+      <span>Every entry is checked against the dataset's own source before it is listed.</span>
       <a href="https://github.com/BilalAbic/awesome-turkish-datasets/blob/main/METHODOLOGY.md" target="_blank" rel="noopener noreferrer">Methodology ↗</a>
     </footer>
   </main>
@@ -761,7 +761,7 @@
         if (state.access) filters.push(state.access);
         if (state.task) filters.push(state.task);
         if (state.search.trim()) filters.push(`“${state.search.trim()}”`);
-        els.activeHint.textContent = filters.length ? filters.join(' · ') : 'Data source: README.md';
+        els.activeHint.textContent = filters.length ? filters.join(' · ') : 'All datasets';
 
         updateSortIndicators();
       }
@@ -905,9 +905,9 @@
           els.resultCount.textContent = 'Catalog could not be loaded';
           els.error.hidden = false;
           const strong = document.createElement('strong');
-          strong.textContent = 'Could not read README.md. ';
+          strong.textContent = 'Could not load the catalog. ';
           const span = document.createElement('span');
-          span.textContent = 'Open this page through GitHub Pages or a local web server; opening index.html directly with file:// blocks fetch().';
+          span.textContent = 'Please try again in a moment, or view the catalog on GitHub.';
           els.error.replaceChildren(strong, span);
         }
       }
