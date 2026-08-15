@@ -4,7 +4,7 @@ A curated catalog of datasets for Turkish across language, speech, vision, and m
 
 Turkish datasets are scattered across dataset cards, university pages, shared-task archives and catalogue records, and existing lists tend to repeat figures long after they stop being true. Every entry below was checked against the dataset itself rather than against another list: the data was located and opened, the Turkish content confirmed, and the licence read where the data actually lives. Where something could not be confirmed, the cell was left empty instead of filled with a plausible value.
 
-**125 datasets** — 96 text/NLP, 13 speech, 16 vision/multimodal.
+**133 datasets** — 104 text/NLP, 13 speech, 16 vision/multimodal.
 
 ## Text, NLP & LLM
 
@@ -81,6 +81,7 @@ Turkish datasets are scattered across dataset cards, university pages, shared-ta
 | 2021-06 | ParlaMint 2.1 (Turkish) | [Turkish parliamentary debate transcripts](https://www.clarin.si/repository/xmlui/handle/11356/1432) | — | 244.35 MB (Turkish) | 3,774,204 utterances (all languages) | Parliamentary Language | CC BY 4.0 | Open |
 | 2021-04 | RUEG | [Bilingual heritage-speaker elicited narratives](https://doi.org/10.5281/zenodo.11234583) | — | 23.4 GB (all languages) | — | Language Resource / Modeling | CC0 1.0 (Public Domain) | Open |
 | 2021 | STSb-TR | [Machine-translated Turkish sentence similarity pairs](https://github.com/verimsu/STSb-TR) | — | 1.5 MB | 8,628 Turkish sentence pairs | Language Resource / Modeling | CC BY-SA 4.0 | Open |
+| 2021 | TS TimeLine News Category Dataset | [Turkish news articles labeled by category](https://tscorpus.com/corpora) | — | — | 3,567,749 annotated sentences from 551,000 news articles spanning 1998-2016 | Language Resource / Modeling | — | Registration Required |
 | 2020-03 | NRC-EIL | [Word emotion-intensity scores, Turkish-translated](http://saifmohammad.com/WebPages/AffectIntensity.htm) | — | — | 9,829 Turkish entries | Language Resource / Modeling | Non-commercial research use | Open |
 | 2020 | KeNet | [Turkish WordNet lexical database](https://github.com/StarlangSoftware/TurkishWordNet) | [Files](https://github.com/StarlangSoftware/TurkishWordNet/raw/master/src/main/resources/turkish_wordnet.xml) | ~ 379.5 MB (GitHub repo) | 77,330 synsets; 109,049 members | Lexical Semantics; Word Sense Processing | GPL-3.0 | Open |
 | 2020 | MKQA (Turkish) | [Open-domain QA pairs across 26 languages](https://github.com/apple/ml-mkqa) | — | ~ 12.4 MB (GitHub repo) | 260,000 total; 10,000 Turkish questions | Open-Domain Question Answering | CC BY-SA 3.0 | Open |
@@ -98,6 +99,7 @@ Turkish datasets are scattered across dataset cards, university pages, shared-ta
 | 2018 | NRC-VAD | [Valence-arousal-dominance word scores, Turkish-translated](http://saifmohammad.com/WebPages/nrc-vad.html) | — | — | 19,971 Turkish entries (v1; v2.1 has no Turkish file) | Language Resource / Modeling | Non-commercial research use | Open |
 | 2017 | TWNERTC | [Wikipedia sentences auto-annotated via large-scale gazetteers](https://data.mendeley.com/datasets/cdcztymf4k/1) | — | 195 MB (Turkish archive) | 532,629 annotated examples | Named Entity Recognition; Text Classification | CC BY 4.0 | Open |
 | 2017 | Linguistic Features in Turkish Word Representations | [Turkish morphological word-analogy pairs](https://github.com/onurgu/linguistic-features-in-turkish-word-representations/releases/tag/v1.0) | — | — | 15,133 noun and 14,231 verb inflection analogies | Language Resource / Modeling | — | Open |
+| 2016 | WMT16 EN-TR | [English-Turkish parallel news sentence pairs](https://huggingface.co/datasets/trmteb/wmt16_en_tr) | [Files](https://huggingface.co/datasets/trmteb/wmt16_en_tr/tree/main) | — | 209,000 Turkish-English sentence pairs (205K train / 1K dev / 3K test); 3.6M/14K/44K Turkish words | Machine Translation / Cross-lingual | — | Open |
 | 2011 | NRC-EmoLex | [Word emotion associations, Turkish-translated](http://saifmohammad.com/WebPages/AccessResource.htm) | — | — | 14,154 Turkish entries | Language Resource / Modeling | Non-commercial research use | Open |
 | 2008 | Bilkent Information Retrieval on Turkish Texts | [Turkish newspaper information retrieval collection](https://github.com/BilkentInformationRetrievalGroup/MilliyetCollectionTREC) | — | — | 408,305 documents; 72 queries | Language Resource / Modeling | — | Open |
 | 2008 | Boun Web Corpus | [Large Turkish web and news corpus](https://tulap.cmpe.bogazici.edu.tr/handle/20.500.12913/68) | — | — | 491M tokens; 423M words | Language Resource / Modeling | Apache-2.0 | Open |
@@ -106,6 +108,12 @@ Turkish datasets are scattered across dataset cards, university pages, shared-ta
 | 2004 | 75 News | [Turkish news articles, five topics](http://www.kemik.yildiz.edu.tr/veri_kumelerimiz.html) | [Files](http://www.kemik.yildiz.edu.tr/data/File/75haber.zip) | 340 KB | 75 news articles across 5 topics | Language Resource / Modeling | — | Open |
 | 1996 | ECI/MCI (European Corpus Initiative/Multilingual Corpus I) | [Multilingual corpus covering major world languages](https://catalog.ldc.upenn.edu/LDC94T5) | — | — | 283K Turkish words across two subcorpora | Lexical or Parallel Resource | — | Paid |
 | — | News-Cat | [Turkish news articles for text categorization](http://www.kemik.yildiz.edu.tr/veri_kumelerimiz.html) | [Files](http://www.kemik.yildiz.edu.tr/data/File/1150haber.rar) | 3.7 MB | 1,150 news articles across 5 categories | Language Resource / Modeling | — | Open |
+| — | THY-SA | [Turkish Airlines tweets with sentiment labels](https://huggingface.co/datasets/trmteb/thy_sa) | [Files](https://huggingface.co/datasets/trmteb/thy_sa/tree/main) | — | 23,300 manually labelled tweets | Language Resource / Modeling | — | Open |
+| — | trnews-64 | [Zenodo record](https://zenodo.org/records/5180654) | — | 123.4 MB | 64M words | Language Resource / Modeling | CC BY 4.0 | Open |
+| — | trseg-41 | [Turkish sentence-segmentation benchmark corpus](https://github.com/alisafaya/mukayese) | [Files](https://github.com/alisafaya/mukayese/releases/download/v0.0.1/mukayese-datasets.tar.gz) | — | 40,000 sentences / 456,000 words across 10,600 documents (news, tweets, scientific abstracts) | Language Resource / Modeling | — | Open |
+| — | trspell-10 | [Turkish spelling-correction word pairs](https://github.com/alisafaya/mukayese) | [Files](https://github.com/alisafaya/mukayese/releases/download/v0.0.1/mukayese-datasets.tar.gz) | — | 10,000 corrupted word pairs (8,500 real Turkish words + 1,000 foreign words + 500 generated sequences) | Language Resource / Modeling | — | Open |
+| — | trwiki-67 | [Zenodo record](https://zenodo.org/records/5213891) | — | 331.8 MB | 67M words | Language Resource / Modeling | CC BY 4.0 | Open |
+| — | TS Abstract Corpus | [Turkish scientific abstracts with POS tagging](https://tscorpus.com/corpora) | — | — | 1,048,132 tokens from 6,234 scientific abstracts | Language Resource / Modeling | — | Registration Required |
 
 ## Speech & Audio
 
