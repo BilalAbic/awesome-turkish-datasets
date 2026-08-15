@@ -1,4 +1,4 @@
-# Awesome Turkish Datasets 🇹🇷
+# Awesome Turkish Datasets
 
 A curated catalog of datasets for Turkish across language, speech, vision, and multimodal AI.
 
