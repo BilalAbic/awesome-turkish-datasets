@@ -1,0 +1,919 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="color-scheme" content="light dark" />
+  <meta name="description" content="A searchable and filterable view of the Awesome Turkish Datasets catalog." />
+  <title>Awesome Turkish Datasets</title>
+  <style>
+    :root {
+      --bg: #ffffff;
+      --surface: #f6f8fa;
+      --surface-2: #ffffff;
+      --text: #1f2328;
+      --muted: #636c76;
+      --border: #d0d7de;
+      --accent: #0969da;
+      --accent-soft: #ddf4ff;
+      --success-bg: #dafbe1;
+      --success-fg: #116329;
+      --warn-bg: #fff8c5;
+      --warn-fg: #7d4e00;
+      --danger-bg: #ffebe9;
+      --danger-fg: #cf222e;
+      --shadow: 0 1px 2px rgba(31, 35, 40, 0.05);
+      --radius: 10px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif,
+        "Apple Color Emoji", "Segoe UI Emoji";
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root:not([data-theme="light"]) {
+        --bg: #0d1117;
+        --surface: #161b22;
+        --surface-2: #0d1117;
+        --text: #e6edf3;
+        --muted: #8b949e;
+        --border: #30363d;
+        --accent: #58a6ff;
+        --accent-soft: #0c2d6b;
+        --success-bg: #12261e;
+        --success-fg: #56d364;
+        --warn-bg: #2d2600;
+        --warn-fg: #e3b341;
+        --danger-bg: #2d1215;
+        --danger-fg: #ff7b72;
+        --shadow: none;
+      }
+    }
+
+    :root[data-theme="dark"] {
+      --bg: #0d1117;
+      --surface: #161b22;
+      --surface-2: #0d1117;
+      --text: #e6edf3;
+      --muted: #8b949e;
+      --border: #30363d;
+      --accent: #58a6ff;
+      --accent-soft: #0c2d6b;
+      --success-bg: #12261e;
+      --success-fg: #56d364;
+      --warn-bg: #2d2600;
+      --warn-fg: #e3b341;
+      --danger-bg: #2d1215;
+      --danger-fg: #ff7b72;
+      --shadow: none;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.5;
+    }
+
+    a { color: var(--accent); }
+
+    button,
+    input,
+    select { font: inherit; }
+
+    .page {
+      width: min(1500px, calc(100% - 32px));
+      margin: 0 auto;
+      padding: 34px 0 48px;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      margin-bottom: 24px;
+    }
+
+    .eyebrow {
+      margin: 0 0 6px;
+      color: var(--muted);
+      font-size: 0.88rem;
+      font-weight: 600;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.75rem, 4vw, 2.5rem);
+      letter-spacing: -0.03em;
+      line-height: 1.1;
+    }
+
+    .nowrap { white-space: nowrap; }
+
+    .subtitle {
+      max-width: 760px;
+      margin: 12px 0 0;
+      color: var(--muted);
+    }
+
+    .header-actions {
+      display: flex;
+      gap: 8px;
+      flex: 0 0 auto;
+    }
+
+    .button,
+    .icon-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 38px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface-2);
+      color: var(--text);
+      text-decoration: none;
+      cursor: pointer;
+      box-shadow: var(--shadow);
+    }
+
+    .button {
+      padding: 7px 12px;
+      font-weight: 600;
+      font-size: 0.9rem;
+    }
+
+    .icon-button {
+      width: 38px;
+      padding: 0;
+      font-size: 1rem;
+    }
+
+    .button:hover,
+    .icon-button:hover { background: var(--surface); }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 10px;
+      margin: 0 0 18px;
+    }
+
+    .stat {
+      padding: 14px 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface-2);
+      box-shadow: var(--shadow);
+    }
+
+    .stat-value {
+      display: block;
+      font-size: 1.25rem;
+      font-weight: 700;
+    }
+
+    .stat-label {
+      display: block;
+      margin-top: 2px;
+      color: var(--muted);
+      font-size: 0.78rem;
+    }
+
+    .controls {
+      display: grid;
+      grid-template-columns: minmax(260px, 1.8fr) repeat(4, minmax(150px, 0.7fr)) auto;
+      gap: 10px;
+      align-items: end;
+      padding: 14px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+
+    .field { min-width: 0; }
+
+    .field label {
+      display: block;
+      margin: 0 0 5px;
+      color: var(--muted);
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .control {
+      width: 100%;
+      height: 40px;
+      padding: 0 11px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      outline: none;
+      background: var(--surface-2);
+      color: var(--text);
+    }
+
+    .control:focus,
+    .button:focus-visible,
+    .icon-button:focus-visible,
+    .sort-button:focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 2px;
+    }
+
+    .reset-button { height: 40px; white-space: nowrap; }
+
+    .result-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin: 14px 2px 8px;
+      color: var(--muted);
+      font-size: 0.86rem;
+    }
+
+    .table-wrap {
+      overflow: auto;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface-2);
+      box-shadow: var(--shadow);
+    }
+
+    table {
+      width: 100%;
+      min-width: 1220px;
+      border-collapse: collapse;
+      font-size: 0.86rem;
+    }
+
+    th,
+    td {
+      padding: 11px 12px;
+      border-bottom: 1px solid var(--border);
+      vertical-align: top;
+      text-align: left;
+    }
+
+    th {
+      position: sticky;
+      top: 0;
+      z-index: 2;
+      background: var(--surface);
+      color: var(--muted);
+      font-size: 0.76rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    tbody tr:last-child td { border-bottom: 0; }
+    tbody tr:hover { background: color-mix(in srgb, var(--surface) 72%, transparent); }
+
+    .sort-button {
+      display: inline-flex;
+      gap: 5px;
+      align-items: center;
+      padding: 0;
+      border: 0;
+      background: transparent;
+      color: inherit;
+      font: inherit;
+      font-weight: inherit;
+      cursor: pointer;
+    }
+
+    .sort-indicator { color: var(--muted); font-size: 0.72rem; }
+
+    .dataset-name {
+      color: var(--text);
+      font-weight: 650;
+      text-decoration: none;
+    }
+
+    .dataset-name:hover { color: var(--accent); text-decoration: underline; }
+
+    .description { min-width: 260px; max-width: 430px; color: var(--muted); }
+    .scale { min-width: 220px; max-width: 360px; }
+    .task { min-width: 180px; }
+    .license { min-width: 150px; }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: var(--surface);
+      color: var(--text);
+      font-size: 0.75rem;
+      white-space: nowrap;
+    }
+
+    .pill.open { background: var(--success-bg); color: var(--success-fg); }
+    .pill.gated { background: var(--warn-bg); color: var(--warn-fg); }
+    .pill.paid { background: var(--danger-bg); color: var(--danger-fg); }
+    .category-pill { border: 1px solid var(--border); }
+
+    .download-link {
+      font-weight: 600;
+      text-decoration: none;
+      white-space: nowrap;
+    }
+
+    .empty,
+    .error {
+      padding: 32px 18px;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    .error strong { color: var(--danger-fg); }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      margin-top: 18px;
+      color: var(--muted);
+      font-size: 0.8rem;
+    }
+
+    .noscript {
+      margin: 20px auto;
+      width: min(900px, calc(100% - 32px));
+      padding: 16px;
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      background: var(--surface);
+    }
+
+    @media (max-width: 1080px) {
+      .controls { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .search-field { grid-column: 1 / -1; }
+      .reset-button { width: 100%; }
+    }
+
+    @media (max-width: 760px) {
+      .page { width: min(100% - 20px, 1500px); padding-top: 22px; }
+      .topbar { flex-direction: column; }
+      .header-actions { width: 100%; }
+      .button { flex: 1; }
+      .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .controls { grid-template-columns: 1fr 1fr; padding: 10px; }
+      .search-field { grid-column: 1 / -1; }
+      .sort-field { grid-column: 1 / -1; }
+      .reset-button { grid-column: 1 / -1; }
+      .result-line { flex-direction: column; gap: 2px; }
+      footer { flex-direction: column; }
+    }
+
+    @media (max-width: 480px) {
+      .controls { grid-template-columns: 1fr; }
+      .search-field,
+      .sort-field,
+      .reset-button { grid-column: auto; }
+    }
+  </style>
+</head>
+<body>
+  <noscript>
+    <div class="noscript">This catalog needs JavaScript to read and filter <code>README.md</code>.</div>
+  </noscript>
+
+  <main class="page" id="app" hidden>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Open dataset catalog</p>
+        <h1>Awesome Turkish <span class="nowrap">Datasets 🇹🇷</span></h1>
+        <p class="subtitle">A fast, searchable view of the repository's Turkish text, speech, vision, OCR, and multimodal datasets.</p>
+      </div>
+      <div class="header-actions">
+        <a class="button" href="https://github.com/BilalAbic/awesome-turkish-datasets" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+        <button class="icon-button" id="themeToggle" type="button" aria-label="Toggle color theme" title="Toggle color theme">◐</button>
+      </div>
+    </header>
+
+    <section class="stats" aria-label="Catalog statistics">
+      <div class="stat"><span class="stat-value" id="totalStat">—</span><span class="stat-label">Total datasets</span></div>
+      <div class="stat"><span class="stat-value" id="textStat">—</span><span class="stat-label">Text / NLP / LLM</span></div>
+      <div class="stat"><span class="stat-value" id="speechStat">—</span><span class="stat-label">Speech / Audio</span></div>
+      <div class="stat"><span class="stat-value" id="visionStat">—</span><span class="stat-label">Vision / OCR / Multimodal</span></div>
+    </section>
+
+    <section class="controls" aria-label="Dataset filters">
+      <div class="field search-field">
+        <label for="search">Search</label>
+        <input class="control" id="search" type="search" autocomplete="off" placeholder="Dataset name, task, license…" />
+      </div>
+      <div class="field">
+        <label for="categoryFilter">Category</label>
+        <select class="control" id="categoryFilter"><option value="">All categories</option></select>
+      </div>
+      <div class="field">
+        <label for="accessFilter">Access</label>
+        <select class="control" id="accessFilter"><option value="">All access types</option></select>
+      </div>
+      <div class="field">
+        <label for="taskFilter">Task</label>
+        <select class="control" id="taskFilter"><option value="">All tasks</option></select>
+      </div>
+      <div class="field sort-field">
+        <label for="sortSelect">Sort</label>
+        <select class="control" id="sortSelect">
+          <option value="date-desc">Newest first</option>
+          <option value="date-asc">Oldest first</option>
+          <option value="name-asc">Name A → Z</option>
+          <option value="name-desc">Name Z → A</option>
+        </select>
+      </div>
+      <button class="button reset-button" id="resetFilters" type="button">Reset</button>
+    </section>
+
+    <div class="result-line" aria-live="polite">
+      <span id="resultCount">Loading catalog…</span>
+      <span id="activeHint">Data source: README.md</span>
+    </div>
+
+    <section class="table-wrap" aria-label="Dataset catalog">
+      <table>
+        <thead>
+          <tr>
+            <th><button class="sort-button" type="button" data-sort="date">Released <span class="sort-indicator" id="dateSortIndicator">↓</span></button></th>
+            <th><button class="sort-button" type="button" data-sort="name">Dataset <span class="sort-indicator" id="nameSortIndicator">↕</span></button></th>
+            <th>Category</th>
+            <th>Description</th>
+            <th>Size</th>
+            <th>Scale</th>
+            <th>Task</th>
+            <th>License</th>
+            <th>Access</th>
+            <th>Download</th>
+          </tr>
+        </thead>
+        <tbody id="datasetBody"></tbody>
+      </table>
+      <div class="empty" id="emptyState" hidden>No datasets match these filters.</div>
+      <div class="error" id="errorState" hidden></div>
+    </section>
+
+    <footer>
+      <span>The website reads the repository's <code>README.md</code> directly. No separate dataset file is required.</span>
+      <a href="https://github.com/BilalAbic/awesome-turkish-datasets/blob/main/METHODOLOGY.md" target="_blank" rel="noopener noreferrer">Methodology ↗</a>
+    </footer>
+  </main>
+
+  <script>
+    (() => {
+      'use strict';
+
+      const README_URL = './README.md';
+      const CATEGORY_HEADINGS = new Set([
+        'Text, NLP & LLM',
+        'Speech & Audio',
+        'Vision, OCR & Multimodal'
+      ]);
+
+      const state = {
+        datasets: [],
+        search: '',
+        category: '',
+        access: '',
+        task: '',
+        sort: 'date-desc'
+      };
+
+      const els = {
+        app: document.getElementById('app'),
+        body: document.getElementById('datasetBody'),
+        empty: document.getElementById('emptyState'),
+        error: document.getElementById('errorState'),
+        search: document.getElementById('search'),
+        category: document.getElementById('categoryFilter'),
+        access: document.getElementById('accessFilter'),
+        task: document.getElementById('taskFilter'),
+        sort: document.getElementById('sortSelect'),
+        reset: document.getElementById('resetFilters'),
+        resultCount: document.getElementById('resultCount'),
+        activeHint: document.getElementById('activeHint'),
+        totalStat: document.getElementById('totalStat'),
+        textStat: document.getElementById('textStat'),
+        speechStat: document.getElementById('speechStat'),
+        visionStat: document.getElementById('visionStat'),
+        dateSortIndicator: document.getElementById('dateSortIndicator'),
+        nameSortIndicator: document.getElementById('nameSortIndicator'),
+        themeToggle: document.getElementById('themeToggle')
+      };
+
+      function splitMarkdownRow(line) {
+        const trimmed = line.trim().replace(/^\|/, '').replace(/\|$/, '');
+        const cells = [];
+        let current = '';
+        let escaped = false;
+
+        for (const char of trimmed) {
+          if (escaped) {
+            current += char;
+            escaped = false;
+          } else if (char === '\\') {
+            current += char;
+            escaped = true;
+          } else if (char === '|') {
+            cells.push(current.trim());
+            current = '';
+          } else {
+            current += char;
+          }
+        }
+        cells.push(current.trim());
+        return cells;
+      }
+
+      function isSeparatorRow(cells) {
+        return cells.length > 1 && cells.every(cell => /^:?-{3,}:?$/.test(cell.trim()));
+      }
+
+      function parseMarkdownLink(value) {
+        const text = value.trim();
+        const match = text.match(/^\[([^\]]+)]\((.+)\)$/);
+        if (!match) return { label: stripInlineMarkdown(text), url: '' };
+        return { label: stripInlineMarkdown(match[1]), url: match[2].trim() };
+      }
+
+      function stripInlineMarkdown(value) {
+        return value
+          .replace(/\\\|/g, '|')
+          .replace(/`([^`]+)`/g, '$1')
+          .replace(/\*\*([^*]+)\*\*/g, '$1')
+          .replace(/\*([^*]+)\*/g, '$1')
+          .trim();
+      }
+
+      function parseReadme(markdown) {
+        const lines = markdown.replace(/\r\n?/g, '\n').split('\n');
+        const datasets = [];
+        let category = '';
+
+        for (let i = 0; i < lines.length; i++) {
+          const heading = lines[i].match(/^##\s+(.+?)\s*$/);
+          if (heading) {
+            const candidate = stripInlineMarkdown(heading[1]);
+            category = CATEGORY_HEADINGS.has(candidate) ? candidate : '';
+            continue;
+          }
+
+          if (!category || !/^\s*\|?\s*Released\s*\|/i.test(lines[i])) continue;
+
+          const headers = splitMarkdownRow(lines[i]).map(h => h.toLowerCase());
+          const required = ['released', 'dataset', 'description', 'download', 'size', 'scale', 'task', 'license', 'access'];
+          if (!required.every(name => headers.includes(name))) continue;
+
+          const separator = splitMarkdownRow(lines[i + 1] || '');
+          if (!isSeparatorRow(separator)) continue;
+
+          i += 2;
+          while (i < lines.length && lines[i].includes('|') && lines[i].trim() !== '') {
+            const cells = splitMarkdownRow(lines[i]);
+            if (cells.length < headers.length) break;
+
+            const row = Object.fromEntries(headers.map((header, index) => [header, cells[index] ?? '']));
+            const description = parseMarkdownLink(row.description || '');
+            const download = parseMarkdownLink(row.download || '');
+
+            datasets.push({
+              released: stripInlineMarkdown(row.released || '—'),
+              dataset: stripInlineMarkdown(row.dataset || '—'),
+              category,
+              description: description.label || '—',
+              sourceUrl: description.url,
+              downloadLabel: download.label || '—',
+              downloadUrl: download.url,
+              size: stripInlineMarkdown(row.size || '—'),
+              scale: stripInlineMarkdown(row.scale || '—'),
+              task: stripInlineMarkdown(row.task || '—'),
+              license: stripInlineMarkdown(row.license || '—'),
+              access: stripInlineMarkdown(row.access || '—')
+            });
+            i++;
+          }
+          i--;
+        }
+
+        return datasets;
+      }
+
+      function normalizeDate(value) {
+        const match = value.trim().match(/^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?$/);
+        if (!match) return 0;
+
+        const year = Number(match[1]);
+        const month = Number(match[2] || 1);
+        const day = Number(match[3] || 1);
+        if (month < 1 || month > 12 || day < 1 || day > 31) return 0;
+
+        const timestamp = Date.UTC(year, month - 1, day);
+        const date = new Date(timestamp);
+        if (
+          date.getUTCFullYear() !== year ||
+          date.getUTCMonth() !== month - 1 ||
+          date.getUTCDate() !== day
+        ) return 0;
+
+        return timestamp;
+      }
+
+      function normalizeSearchText(value) {
+        return String(value || '')
+          .normalize('NFKD')
+          .replace(/[\u0300-\u036f]/g, '')
+          .toLowerCase()
+          .replace(/ı/g, 'i');
+      }
+
+      function safeUrl(value) {
+        if (!value || value === '—') return '';
+        try {
+          const url = new URL(value, window.location.href);
+          return ['http:', 'https:'].includes(url.protocol) ? url.href : '';
+        } catch {
+          return '';
+        }
+      }
+
+      function makeCell(text, className = '') {
+        const td = document.createElement('td');
+        if (className) td.className = className;
+        td.textContent = text || '—';
+        return td;
+      }
+
+      function makePill(text, extraClass = '') {
+        const span = document.createElement('span');
+        span.className = `pill ${extraClass}`.trim();
+        span.textContent = text || '—';
+        return span;
+      }
+
+      function accessClass(access) {
+        const value = access.toLowerCase();
+        if (value === 'open') return 'open';
+        if (value === 'gated') return 'gated';
+        if (value === 'paid') return 'paid';
+        return '';
+      }
+
+      function renderRow(item) {
+        const tr = document.createElement('tr');
+        tr.appendChild(makeCell(item.released));
+
+        const datasetCell = document.createElement('td');
+        const sourceUrl = safeUrl(item.sourceUrl);
+        if (sourceUrl) {
+          const a = document.createElement('a');
+          a.className = 'dataset-name';
+          a.href = sourceUrl;
+          a.target = '_blank';
+          a.rel = 'noopener noreferrer';
+          a.textContent = item.dataset;
+          datasetCell.appendChild(a);
+        } else {
+          const span = document.createElement('span');
+          span.className = 'dataset-name';
+          span.textContent = item.dataset;
+          datasetCell.appendChild(span);
+        }
+        tr.appendChild(datasetCell);
+
+        const categoryCell = document.createElement('td');
+        categoryCell.appendChild(makePill(item.category, 'category-pill'));
+        tr.appendChild(categoryCell);
+
+        tr.appendChild(makeCell(item.description, 'description'));
+        tr.appendChild(makeCell(item.size));
+        tr.appendChild(makeCell(item.scale, 'scale'));
+        tr.appendChild(makeCell(item.task, 'task'));
+        tr.appendChild(makeCell(item.license, 'license'));
+
+        const accessCell = document.createElement('td');
+        accessCell.appendChild(makePill(item.access, accessClass(item.access)));
+        tr.appendChild(accessCell);
+
+        const downloadCell = document.createElement('td');
+        const downloadUrl = safeUrl(item.downloadUrl);
+        if (downloadUrl) {
+          const a = document.createElement('a');
+          a.className = 'download-link';
+          a.href = downloadUrl;
+          a.target = '_blank';
+          a.rel = 'noopener noreferrer';
+          a.textContent = item.downloadLabel === '—' ? 'Open ↗' : `${item.downloadLabel} ↗`;
+          downloadCell.appendChild(a);
+        } else {
+          downloadCell.textContent = '—';
+        }
+        tr.appendChild(downloadCell);
+
+        return tr;
+      }
+
+      function filterAndSort() {
+        const query = normalizeSearchText(state.search.trim());
+
+        const filtered = state.datasets.filter(item => {
+          if (state.category && item.category !== state.category) return false;
+          if (state.access && item.access !== state.access) return false;
+          if (state.task && !item.task.split(';').map(v => v.trim()).includes(state.task)) return false;
+
+          if (!query) return true;
+          const haystack = [
+            item.dataset,
+            item.description,
+            item.task,
+            item.license,
+            item.access,
+            item.category,
+            item.released
+          ].join(' ');
+          return normalizeSearchText(haystack).includes(query);
+        });
+
+        filtered.sort((a, b) => {
+          if (state.sort === 'date-asc') return normalizeDate(a.released) - normalizeDate(b.released) || a.dataset.localeCompare(b.dataset, 'tr');
+          if (state.sort === 'name-asc') return a.dataset.localeCompare(b.dataset, 'tr', { sensitivity: 'base' });
+          if (state.sort === 'name-desc') return b.dataset.localeCompare(a.dataset, 'tr', { sensitivity: 'base' });
+          return normalizeDate(b.released) - normalizeDate(a.released) || a.dataset.localeCompare(b.dataset, 'tr');
+        });
+
+        return filtered;
+      }
+
+      function render() {
+        const rows = filterAndSort();
+        const fragment = document.createDocumentFragment();
+        rows.forEach(item => fragment.appendChild(renderRow(item)));
+        els.body.replaceChildren(fragment);
+
+        els.empty.hidden = rows.length !== 0;
+        els.resultCount.textContent = `Showing ${rows.length.toLocaleString()} of ${state.datasets.length.toLocaleString()} datasets`;
+
+        const filters = [];
+        if (state.category) filters.push(state.category);
+        if (state.access) filters.push(state.access);
+        if (state.task) filters.push(state.task);
+        if (state.search.trim()) filters.push(`“${state.search.trim()}”`);
+        els.activeHint.textContent = filters.length ? filters.join(' · ') : 'Data source: README.md';
+
+        updateSortIndicators();
+      }
+
+      function addOptions(select, values) {
+        const fragment = document.createDocumentFragment();
+        values.forEach(value => {
+          const option = document.createElement('option');
+          option.value = value;
+          option.textContent = value;
+          fragment.appendChild(option);
+        });
+        select.appendChild(fragment);
+      }
+
+      function populateFilters() {
+        const categories = [...new Set(state.datasets.map(d => d.category))].sort((a, b) => a.localeCompare(b, 'en'));
+        const accessTypes = [...new Set(state.datasets.map(d => d.access))].sort((a, b) => a.localeCompare(b, 'en'));
+        const tasks = [...new Set(
+          state.datasets.flatMap(d => d.task.split(';').map(task => task.trim()).filter(task => task && task !== '—'))
+        )].sort((a, b) => a.localeCompare(b, 'en', { sensitivity: 'base' }));
+
+        addOptions(els.category, categories);
+        addOptions(els.access, accessTypes);
+        addOptions(els.task, tasks);
+      }
+
+      function updateStats() {
+        const count = category => state.datasets.filter(d => d.category === category).length;
+        els.totalStat.textContent = state.datasets.length.toLocaleString();
+        els.textStat.textContent = count('Text, NLP & LLM').toLocaleString();
+        els.speechStat.textContent = count('Speech & Audio').toLocaleString();
+        els.visionStat.textContent = count('Vision, OCR & Multimodal').toLocaleString();
+      }
+
+      function updateSortIndicators() {
+        els.dateSortIndicator.textContent = state.sort === 'date-asc' ? '↑' : state.sort === 'date-desc' ? '↓' : '↕';
+        els.nameSortIndicator.textContent = state.sort === 'name-asc' ? '↑' : state.sort === 'name-desc' ? '↓' : '↕';
+      }
+
+      function bindEvents() {
+        els.search.addEventListener('input', event => {
+          state.search = event.target.value;
+          render();
+        });
+        els.category.addEventListener('change', event => {
+          state.category = event.target.value;
+          render();
+        });
+        els.access.addEventListener('change', event => {
+          state.access = event.target.value;
+          render();
+        });
+        els.task.addEventListener('change', event => {
+          state.task = event.target.value;
+          render();
+        });
+        els.sort.addEventListener('change', event => {
+          state.sort = event.target.value;
+          render();
+        });
+        els.reset.addEventListener('click', () => {
+          state.search = '';
+          state.category = '';
+          state.access = '';
+          state.task = '';
+          state.sort = 'date-desc';
+          els.search.value = '';
+          els.category.value = '';
+          els.access.value = '';
+          els.task.value = '';
+          els.sort.value = 'date-desc';
+          render();
+          els.search.focus();
+        });
+
+        document.querySelectorAll('[data-sort]').forEach(button => {
+          button.addEventListener('click', () => {
+            const type = button.dataset.sort;
+            if (type === 'date') {
+              state.sort = state.sort === 'date-desc' ? 'date-asc' : 'date-desc';
+            } else {
+              state.sort = state.sort === 'name-asc' ? 'name-desc' : 'name-asc';
+            }
+            els.sort.value = state.sort;
+            render();
+          });
+        });
+
+        els.themeToggle.addEventListener('click', () => {
+          const root = document.documentElement;
+          const current = root.dataset.theme;
+          const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          const next = current === 'dark' || (!current && systemDark) ? 'light' : 'dark';
+          root.dataset.theme = next;
+          writeStoredTheme(next);
+        });
+      }
+
+      function readStoredTheme() {
+        try {
+          return window.localStorage.getItem('catalog-theme');
+        } catch {
+          return null;
+        }
+      }
+
+      function writeStoredTheme(theme) {
+        try {
+          window.localStorage.setItem('catalog-theme', theme);
+        } catch {
+          // Theme persistence is optional; the page still works without storage access.
+        }
+      }
+
+      function restoreTheme() {
+        const saved = readStoredTheme();
+        if (saved === 'light' || saved === 'dark') document.documentElement.dataset.theme = saved;
+      }
+
+      async function init() {
+        restoreTheme();
+        els.app.hidden = false;
+        bindEvents();
+
+        try {
+          const response = await fetch(README_URL, { cache: 'no-cache' });
+          if (!response.ok) throw new Error(`README.md returned HTTP ${response.status}`);
+          const markdown = await response.text();
+          state.datasets = parseReadme(markdown);
+
+          if (!state.datasets.length) {
+            throw new Error('No catalog rows were found. Check the README table headings and columns.');
+          }
+
+          populateFilters();
+          updateStats();
+          render();
+        } catch (error) {
+          console.error(error);
+          els.resultCount.textContent = 'Catalog could not be loaded';
+          els.error.hidden = false;
+          const strong = document.createElement('strong');
+          strong.textContent = 'Could not read README.md. ';
+          const span = document.createElement('span');
+          span.textContent = 'Open this page through GitHub Pages or a local web server; opening index.html directly with file:// blocks fetch().';
+          els.error.replaceChildren(strong, span);
+        }
+      }
+
+      init();
+    })();
+  </script>
+</body>
+</html>
