@@ -244,9 +244,11 @@
 
     table {
       width: 100%;
-      min-width: 1220px;
+      min-width: 1040px;
       border-collapse: collapse;
       font-size: 0.86rem;
+      /* digits line up column-wise, so sizes and counts can be compared by eye */
+      font-variant-numeric: tabular-nums;
     }
 
     th,
@@ -269,7 +271,9 @@
     }
 
     tbody tr:last-child td { border-bottom: 0; }
-    tbody tr:hover { background: color-mix(in srgb, var(--surface) 72%, transparent); }
+    /* banding carries the eye across ten columns without adding chrome */
+    tbody tr:nth-child(even) { background: color-mix(in srgb, var(--surface) 45%, transparent); }
+    tbody tr:hover { background: color-mix(in srgb, var(--accent-soft) 55%, transparent); }
 
     .sort-button {
       display: inline-flex;
@@ -290,14 +294,19 @@
       color: var(--text);
       font-weight: 650;
       text-decoration: none;
+      /* repository-style names run long and have no spaces to break at */
+      overflow-wrap: anywhere;
     }
 
     .dataset-name:hover { color: var(--accent); text-decoration: underline; }
 
-    .description { min-width: 260px; max-width: 430px; color: var(--muted); }
-    .scale { min-width: 220px; max-width: 360px; }
-    .task { min-width: 180px; }
-    .license { min-width: 150px; }
+    /* wide enough to read, narrow enough that ten columns fit a 1280px screen
+       without the table scrolling sideways inside its frame */
+    tbody td:nth-child(2) { min-width: 165px; }
+    .description { min-width: 175px; max-width: 300px; color: var(--muted); }
+    .scale { min-width: 135px; max-width: 230px; }
+    .task { min-width: 125px; }
+    .license { min-width: 100px; }
 
     .pill {
       display: inline-flex;
@@ -307,7 +316,9 @@
       background: var(--surface);
       color: var(--text);
       font-size: 0.75rem;
-      white-space: nowrap;
+      /* "Registration Required" and the long category names wrap rather than
+         widening the whole table for two words */
+      white-space: normal;
     }
 
     .pill.open { background: var(--success-bg); color: var(--success-fg); }
@@ -657,7 +668,9 @@
       function accessClass(access) {
         const value = access.toLowerCase();
         if (value === 'open') return 'open';
-        if (value === 'gated') return 'gated';
+        // gated, registration required, application required: obtainable, but
+        // only once the publisher lets you through
+        if (value === 'gated' || value.includes('required')) return 'gated';
         if (value === 'paid') return 'paid';
         return '';
       }
