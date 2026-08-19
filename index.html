@@ -467,7 +467,7 @@
     (() => {
       'use strict';
 
-      const README_URL = './README.md';
+      const DATA_URL = './datasets.json';
       const CATEGORY_HEADINGS = new Set([
         'Text, NLP & LLM',
         'Speech & Audio',
@@ -888,13 +888,27 @@
         bindEvents();
 
         try {
-          const response = await fetch(README_URL, { cache: 'no-cache' });
-          if (!response.ok) throw new Error(`README.md returned HTTP ${response.status}`);
-          const markdown = await response.text();
-          state.datasets = parseReadme(markdown);
+          const response = await fetch(DATA_URL, { cache: 'no-cache' });
+          if (!response.ok) throw new Error(`datasets.json returned HTTP ${response.status}`);
+          const entries = await response.json();
+          const dash = value => (value && String(value).trim()) || '—';
+          state.datasets = entries.map(entry => ({
+            released: dash(entry.released),
+            dataset: dash(entry.dataset),
+            category: entry.category || '',
+            description: dash(entry.description),
+            sourceUrl: entry.sourceUrl || '',
+            downloadLabel: dash(entry.downloadLabel),
+            downloadUrl: entry.downloadUrl || '',
+            size: dash(entry.size),
+            scale: dash(entry.scale),
+            task: dash(entry.task),
+            license: dash(entry.license),
+            access: dash(entry.access)
+          }));
 
           if (!state.datasets.length) {
-            throw new Error('No catalog rows were found. Check the README table headings and columns.');
+            throw new Error('The catalog file contained no entries.');
           }
 
           populateFilters();
