@@ -2,9 +2,21 @@
 
 A curated catalog of datasets for Turkish across language, speech, vision, and multimodal AI.
 
-Turkish datasets are scattered across dataset cards, university pages, shared-task archives and catalogue records, and existing lists tend to repeat figures long after they stop being true. Every entry below was checked against the dataset itself rather than against another list: the data was located and opened, the Turkish content confirmed, and the licence read where the data actually lives. Where something could not be confirmed, the cell was left empty instead of filled with a plausible value.
+Turkish datasets are scattered across dataset cards, university pages, shared-task archives and catalogue records, and lists of them tend to repeat figures long after those figures stop being true. Every entry here was checked against the dataset itself rather than against another list: the data was located and opened, its Turkish content read, and the licence taken from wherever the data is actually distributed. Anything that could not be confirmed was left out rather than filled in with a plausible value.
 
-**243 datasets** — 181 text/NLP, 19 speech, 43 vision/multimodal.
+Paid, gated and registration-gated datasets are listed alongside open ones, with their conditions stated. What is left out: releases whose Turkish portion cannot be separated from the other languages, resources that turn out to be a model, a tool or a paper rather than data, and datasets with no obtainable copy anywhere. [METHODOLOGY.md](METHODOLOGY.md) has the full rules.
+
+**243 datasets** — 181 text/NLP · 19 speech · 43 vision/multimodal
+
+Last reviewed August 2026 · [searchable version](https://bilalabic.github.io/awesome-turkish-datasets/) with filters by category, task and access
+
+## Contents
+
+- [Text, NLP & LLM](#text-nlp--llm) (181)
+- [Speech & Audio](#speech--audio) (19)
+- [Vision, OCR & Multimodal](#vision-ocr--multimodal) (43)
+
+Each entry reads **name** — description, then `release date · scale · size · task · licence · access`. A fact that is missing could not be verified. [How to read an entry](#how-to-read-an-entry) explains the rest.
 
 ## Text, NLP & LLM
 
@@ -371,6 +383,8 @@ Turkish datasets are scattered across dataset cards, university pages, shared-ta
 - **[UniMorph](https://unimorph.github.io/)** — Cross-lingual inflectional morphology paradigms  
   570,420 Turkish forms; 3,579 paradigms · Language Resource / Modeling · CC BY-SA 3.0 · Open
 
+<sub>[back to contents](#contents)</sub>
+
 ## Speech & Audio
 
 - **[tr-combined](https://huggingface.co/datasets/Codyfederer/tr-combined)** — Merged speech audio from 894 sources  
@@ -411,6 +425,8 @@ Turkish datasets are scattered across dataset cards, university pages, shared-ta
   2005 · ~1 hour Turkish; 10 speakers · Automatic Speech Recognition · ELRA END USER / ELRA VAR · Paid
 - **[GlobalPhone Turkish Pronunciation Dictionary](https://catalog.elra.info/en-us/repository/browse/ELRA-S0361/)** — Turkish pronunciation dictionary in Romanized script  
   2005 · 31,330 entries / 31,087 Turkish words · Pronunciation Lexicon · ELRA END USER · Paid
+
+<sub>[back to contents](#contents)</sub>
 
 ## Vision, OCR & Multimodal
 
@@ -501,6 +517,8 @@ Turkish datasets are scattered across dataset cards, university pages, shared-ta
 - **[Turkish Shopping List OCR Image Dataset](https://www.futurebeeai.com/dataset/ocr-dataset/turkish-shopping-list-ocr-image-dataset)**  
   2,000+ images · OCR · Paid
 
+<sub>[back to contents](#contents)</sub>
+
 ## How to read an entry
 
 Each entry names the dataset, linked to its canonical source — an official dataset card, repository, catalogue record, or project page — followed by a short description drawn from that source. The line beneath carries the facts in a fixed order: **release date · scale · stored size · task · licence · access**, and a link straight to the files where a direct location is known.
@@ -509,26 +527,16 @@ Access reads as one of five conditions: `Open` means publicly downloadable, `Gat
 
 For a multilingual dataset the Turkish portion is given wherever it could be isolated: a scale written as `260,000 total; 10,000 Turkish questions` means only the second figure is Turkish. A figure carries a qualifier when it needs one — *(Turkish subset)* is the Turkish portion alone, *(all languages)* covers every language in the release, *(GitHub repo)* is repository size including version history — and a leading `~` means the figure is approximate.
 
-**A fact that could not be verified from an authoritative source is simply absent.** Nothing here is estimated or inferred, so a missing licence means the licence could not be established — not that the dataset has none. See [METHODOLOGY.md](METHODOLOGY.md) for how entries are selected and checked.
+**A fact that could not be verified from an authoritative source is simply absent.** Nothing here is estimated or inferred, so a missing licence means the licence could not be established — not that the dataset has none.
 
-Catalog last reviewed: August 2026.
-
-## Notes on the data
-
-- **Release dates.** For datasets whose canonical source is a Hugging Face repository, the date is when the dataset was published there. An older original release may exist for corpora that were uploaded to Hugging Face later.
-- **Turkish subsets.** A multilingual dataset is listed only when its Turkish portion can be identified — a dedicated Turkish split, config, or a reported Turkish count. Turkish-specific figures are preferred over multilingual totals wherever they could be established.
-- **Licenses.** A license is recorded only when it applies to the dataset itself. A repository or loader-code license covering something other than the data was not copied into this table.
+Two conventions are worth knowing. A licence is recorded only when it covers the data itself: where a repository's licence turned out to cover its loader code or its documentation rather than the dataset, it was left off. And for a dataset whose canonical source is a Hugging Face repository, the date is when it was published there, which can be later than an original release elsewhere.
 
 ## Contributing
 
 Corrections and additions are welcome — open an issue, or send a pull request if you already have the details.
 
-The one rule is that every value must be traceable to an authoritative source: the dataset's own page, its repository, its paper, or the archive that distributes it. A blank cell is better than a plausible guess, so leaving a field empty is a perfectly good contribution. When adding a dataset, please include the link you checked it against; when correcting one, say what the source states. Reports of dead links, moved datasets, and duplicate entries are just as useful as new additions.
+The one rule is that every value must be traceable to an authoritative source: the dataset's own page, its repository, its paper, or the archive that distributes it. An empty field is better than a plausible guess, so leaving one blank is a perfectly good contribution. When adding a dataset, please include the link you checked it against; when correcting one, say what the source states. Reports of dead links, moved datasets, and duplicate entries are as useful as new additions — several entries here were fixed or removed exactly that way.
 
 ## License
 
 The catalog text in this repository is available under CC BY 4.0. Each dataset carries its own license, listed above.
-
----
-
-The same catalog is browsable at [bilalabic.github.io/awesome-turkish-datasets](https://bilalabic.github.io/awesome-turkish-datasets/), with search and filtering by category, task and access.
