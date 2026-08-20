@@ -6,15 +6,15 @@ Turkish datasets are scattered across dataset cards, university pages, shared-ta
 
 Paid, gated and registration-gated datasets are listed alongside open ones, with their conditions stated. What is left out: releases whose Turkish portion cannot be separated from the other languages, resources that turn out to be a model, a tool or a paper rather than data, and datasets with no obtainable copy anywhere. [METHODOLOGY.md](METHODOLOGY.md) has the full rules.
 
-**290 datasets** — 220 text/NLP · 22 speech · 48 vision/multimodal
+**298 datasets** — 227 text/NLP · 22 speech · 49 vision/multimodal
 
 Last reviewed August 2026 · [searchable version](https://bilalabic.github.io/awesome-turkish-datasets/) with filters by category, task and access
 
 ## Contents
 
-- [Text, NLP & LLM](#text-nlp--llm) (220)
+- [Text, NLP & LLM](#text-nlp--llm) (227)
 - [Speech & Audio](#speech--audio) (22)
-- [Vision, OCR & Multimodal](#vision-ocr--multimodal) (48)
+- [Vision, OCR & Multimodal](#vision-ocr--multimodal) (49)
 
 Each entry reads **name** — description, then `release date · scale · size · task · licence · access`. A fact that is missing could not be verified. [How to read an entry](#how-to-read-an-entry) explains the rest.
 
@@ -442,10 +442,24 @@ Each entry reads **name** — description, then `release date · scale · size �
   450,000+ tokens; 15,053 confessions · Social Media Analysis · Registration Required
 - **[Covid-19 TweetS](https://tscorpus.com/corpora)** — Turkish tweets from early Covid-19 pandemic  
   7.5+ million tokens · Social Media Analysis · Registration Required
+- **[ELRC-3057-wikipedia_health](https://opus.nlpl.eu/datasets/ELRC-3057-wikipedia_health)**  
+  2,368 aligned pairs (largest listed Turkish pair) · 245.8 KB · Machine Translation · CC BY-SA 3.0 · Open · [Files](https://object.pouta.csc.fi/OPUS-ELRC-3057-wikipedia_health/v1/moses/en-tr.txt.zip)
+- **[ELRC-wikipedia_health](https://opus.nlpl.eu/datasets/ELRC-wikipedia_health)**  
+  2,368 aligned pairs (en-tr) · 247.2 KB · Machine Translation · CC BY-SA 3.0 · Open · [Files](https://object.pouta.csc.fi/OPUS-ELRC-wikipedia_health/v1/moses/en-tr.txt.zip)
+- **[ELRC_2922](https://opus.nlpl.eu/datasets/ELRC_2922)**  
+  2,367 aligned pairs (largest listed Turkish pair) · 250.8 KB · Machine Translation · CC BY 4.0 · Open · [Files](https://object.pouta.csc.fi/OPUS-ELRC_2922/v1/moses/en-tr.txt.zip)
+- **[EUbookshop](https://opus.nlpl.eu/datasets/EUbookshop)**  
+  23,706 aligned pairs (largest listed Turkish pair) · 2.12 MB · Machine Translation · Open · [Files](https://object.pouta.csc.fi/OPUS-EUbookshop/v2/moses/en-tr.txt.zip)
+- **[Evrim Ağacı Korpusu](https://tscorpus.com/corpora)**  
+  4.4+ million tokens; 7,287 articles · Language Modeling · Registration Required
+- **[Gazeteden Tarihe Bakış Projesi](https://nek.istanbul.edu.tr/ekos/GAZETE/)**  
+  55 newspaper titles; 581,106 pages · Language Resource / Modeling · Open
 - **[Gender identification on Twitter](https://cloud.iyte.edu.tr/index.php/s/5DhqdlUCCdB60qG)** — Turkish Twitter gender-labeled dataset  
   23.5 MB · Language Resource / Modeling · Open
 - **[GLOBAL Multilingual Lexical Data - Monolingual - Level 1](https://catalog.elra.info/en-us/repository/browse/ELRA-M0111_01/)** — Lexicographic word entries across 25 languages  
   Lexical or Parallel Resource · ELRA VAR · Paid
+- **[GlobalVoices](https://opus.nlpl.eu/datasets/GlobalVoices)**  
+  7,838 aligned pairs (largest listed Turkish pair) · 720.3 KB · Machine Translation · Open · [Files](https://object.pouta.csc.fi/OPUS-GlobalVoices/v2018q4/moses/en-tr.txt.zip)
 - **[LORETO Thesaurus](https://catalog.elra.info/en-us/repository/browse/ELRA-T0089/)** — Multilingual hierarchical cross-referenced thesaurus  
   800 total entries (all languages) · Lexical Resource · ELRA END USER / ELRA VAR · Paid
 - **[Ottoman (local) newspapers](https://www.osmanlicagazeteler.org/)** — Digitized Ottoman-era provincial newspapers  
@@ -592,6 +606,8 @@ Each entry reads **name** — description, then `release date · scale · size �
   2024-04 · 12,222 Turkish captions for 8,000 images · 1.03 GB · Vision-Language · CC0 1.0 · Open · [Files](https://huggingface.co/datasets/atasoglu/flickr8k-turkish)
 - **[Turkish Clip Dataset](https://huggingface.co/datasets/umarigan/turkish_clip_dataset_with_text_embeddings)** — Turkish image-caption pairs for CLIP  
   2024-01 · 410,017 rows · 30.1 GB · Vision-Language · CreativeML OpenRAIL-M · Open · [Files](https://huggingface.co/datasets/umarigan/turkish_clip_dataset_with_text_embeddings/tree/main)
+- **[E-TSL (Educational TSL)](https://arxiv.org/abs/2405.02984)**  
+  2024 · 1,410 videos; ~24 hours; 11 signers · Continuous Sign Language Recognition
 - **[STS-TR (Synthetic Turkish Scene Text)](https://www.kaggle.com/datasets/serdaryildiz/synthetic-turkish-scene-text-recognition-dataset)**  
   2024 · 12M+ synthetic scene-text images · 75.6 GB · Scene Text Recognition · CC BY-NC 4.0 · Open
 - **[TS-TR (Turkish Scene Text Recognition)](https://www.kaggle.com/datasets/serdaryildiz/turkish-scene-text-recognition-dataset)**  

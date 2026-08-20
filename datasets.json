@@ -504,6 +504,20 @@
   "access": "Application Required"
  },
  {
+  "released": "",
+  "dataset": "Gazeteden Tarihe Bakış Projesi",
+  "category": "Text, NLP & LLM",
+  "description": "",
+  "sourceUrl": "https://nek.istanbul.edu.tr/ekos/GAZETE/",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "",
+  "scale": "55 newspaper titles; 581,106 pages",
+  "task": "Language Resource / Modeling",
+  "license": "",
+  "access": "Open"
+ },
+ {
   "released": "2019-01",
   "dataset": "A data set for NER and Stance detection",
   "category": "Text, NLP & LLM",
@@ -1302,6 +1316,48 @@
   "access": "Paid"
  },
  {
+  "released": "",
+  "dataset": "ELRC-3057-wikipedia_health",
+  "category": "Text, NLP & LLM",
+  "description": "",
+  "sourceUrl": "https://opus.nlpl.eu/datasets/ELRC-3057-wikipedia_health",
+  "downloadLabel": "Files",
+  "downloadUrl": "https://object.pouta.csc.fi/OPUS-ELRC-3057-wikipedia_health/v1/moses/en-tr.txt.zip",
+  "size": "245.8 KB",
+  "scale": "2,368 aligned pairs (largest listed Turkish pair)",
+  "task": "Machine Translation",
+  "license": "CC BY-SA 3.0",
+  "access": "Open"
+ },
+ {
+  "released": "",
+  "dataset": "ELRC-wikipedia_health",
+  "category": "Text, NLP & LLM",
+  "description": "",
+  "sourceUrl": "https://opus.nlpl.eu/datasets/ELRC-wikipedia_health",
+  "downloadLabel": "Files",
+  "downloadUrl": "https://object.pouta.csc.fi/OPUS-ELRC-wikipedia_health/v1/moses/en-tr.txt.zip",
+  "size": "247.2 KB",
+  "scale": "2,368 aligned pairs (en-tr)",
+  "task": "Machine Translation",
+  "license": "CC BY-SA 3.0",
+  "access": "Open"
+ },
+ {
+  "released": "",
+  "dataset": "ELRC_2922",
+  "category": "Text, NLP & LLM",
+  "description": "",
+  "sourceUrl": "https://opus.nlpl.eu/datasets/ELRC_2922",
+  "downloadLabel": "Files",
+  "downloadUrl": "https://object.pouta.csc.fi/OPUS-ELRC_2922/v1/moses/en-tr.txt.zip",
+  "size": "250.8 KB",
+  "scale": "2,367 aligned pairs (largest listed Turkish pair)",
+  "task": "Machine Translation",
+  "license": "CC BY 4.0",
+  "access": "Open"
+ },
+ {
   "released": "2023-04",
   "dataset": "stanford-alpaca-cleaned-turkish-translated",
   "category": "Text, NLP & LLM",
@@ -1344,6 +1400,20 @@
   "access": "Open"
  },
  {
+  "released": "",
+  "dataset": "EUbookshop",
+  "category": "Text, NLP & LLM",
+  "description": "",
+  "sourceUrl": "https://opus.nlpl.eu/datasets/EUbookshop",
+  "downloadLabel": "Files",
+  "downloadUrl": "https://object.pouta.csc.fi/OPUS-EUbookshop/v2/moses/en-tr.txt.zip",
+  "size": "2.12 MB",
+  "scale": "23,706 aligned pairs (largest listed Turkish pair)",
+  "task": "Machine Translation",
+  "license": "",
+  "access": "Open"
+ },
+ {
   "released": "2024-12",
   "dataset": "Everyday Turkish Conversations",
   "category": "Text, NLP & LLM",
@@ -1356,6 +1426,20 @@
   "task": "Instruction Tuning",
   "license": "Apache-2.0",
   "access": "Open"
+ },
+ {
+  "released": "",
+  "dataset": "Evrim Ağacı Korpusu",
+  "category": "Text, NLP & LLM",
+  "description": "",
+  "sourceUrl": "https://tscorpus.com/corpora",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "",
+  "scale": "4.4+ million tokens; 7,287 articles",
+  "task": "Language Modeling",
+  "license": "",
+  "access": "Registration Required"
  },
  {
   "released": "2023-10",
@@ -1481,6 +1565,20 @@
   "scale": "100 Turkish rows",
   "task": "Benchmarking",
   "license": "CC BY-SA 4.0",
+  "access": "Open"
+ },
+ {
+  "released": "",
+  "dataset": "GlobalVoices",
+  "category": "Text, NLP & LLM",
+  "description": "",
+  "sourceUrl": "https://opus.nlpl.eu/datasets/GlobalVoices",
+  "downloadLabel": "Files",
+  "downloadUrl": "https://object.pouta.csc.fi/OPUS-GlobalVoices/v2018q4/moses/en-tr.txt.zip",
+  "size": "720.3 KB",
+  "scale": "7,838 aligned pairs (largest listed Turkish pair)",
+  "task": "Machine Translation",
+  "license": "",
   "access": "Open"
  },
  {
@@ -3400,6 +3498,20 @@
   "task": "Visual Reasoning",
   "license": "",
   "access": "Open"
+ },
+ {
+  "released": "2024",
+  "dataset": "E-TSL (Educational TSL)",
+  "category": "Vision, OCR & Multimodal",
+  "description": "",
+  "sourceUrl": "https://arxiv.org/abs/2405.02984",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "",
+  "scale": "1,410 videos; ~24 hours; 11 signers",
+  "task": "Continuous Sign Language Recognition",
+  "license": "",
+  "access": ""
  },
  {
   "released": "2024",
