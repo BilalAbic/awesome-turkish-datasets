@@ -6,14 +6,14 @@ Turkish datasets are scattered across dataset cards, university pages, shared-ta
 
 Paid, gated and registration-gated datasets are listed alongside open ones, with their conditions stated. What is left out: releases whose Turkish portion cannot be separated from the other languages, resources that turn out to be a model, a tool or a paper rather than data, and datasets with no obtainable copy anywhere. [METHODOLOGY.md](METHODOLOGY.md) has the full rules.
 
-**273 datasets** — 204 text/NLP · 21 speech · 48 vision/multimodal
+**290 datasets** — 220 text/NLP · 22 speech · 48 vision/multimodal
 
 Last reviewed August 2026 · [searchable version](https://bilalabic.github.io/awesome-turkish-datasets/) with filters by category, task and access
 
 ## Contents
 
-- [Text, NLP & LLM](#text-nlp--llm) (204)
-- [Speech & Audio](#speech--audio) (21)
+- [Text, NLP & LLM](#text-nlp--llm) (220)
+- [Speech & Audio](#speech--audio) (22)
 - [Vision, OCR & Multimodal](#vision-ocr--multimodal) (48)
 
 Each entry reads **name** — description, then `release date · scale · size · task · licence · access`. A fact that is missing could not be verified. [How to read an entry](#how-to-read-an-entry) explains the rest.
@@ -226,6 +226,8 @@ Each entry reads **name** — description, then `release date · scale · size �
   2023-03 · 26,654,330 Turkish documents; 8,290,890,087 words · 73.7 GB (Turkish subset) · Language Modeling · CC0 (metadata only) · Gated · [Files](https://huggingface.co/datasets/oscar-corpus/OSCAR-2301/tree/main)
 - **[merve/turkish_instructions](https://huggingface.co/datasets/merve/turkish_instructions)**  
   2023 · 51,563 rows · 21.2 MB · Instruction Tuning · Apache-2.0 · Open · [Files](https://huggingface.co/datasets/merve/turkish_instructions/tree/main)
+- **[A Twitter offensive language data set with context](https://github.com/boun-tabi/CovidOffensiveLanguageUltimateDatasets)** — Offensive language detection in tweets, with context  
+  2023 · 28,808 tweet-reply pairs · 4.1 MB · Text Classification · Open
 - **[GEOLINGUAL Multilingual Geographical Entity Tables](https://catalog.elra.info/en-us/repository/browse/ELRA-L0205/)** — Geographical entity names in multiple languages  
   2023 · 200 geographical entities (16 languages) · Lexical Resource · ELRA VAR · Paid
 - **[GLOBAL Multilingual Lexical Data - Bilingual - Level 1](https://catalog.elra.info/en-us/repository/browse/ELRA-M0111_04/)** — Bilingual lexicographic core data resource  
@@ -244,8 +246,14 @@ Each entry reads **name** — description, then `release date · scale · size �
   2022 · 16,521 Turkish utterances · 40.3 MB (Turkish subset) · Intent Classification; Slot Filling · CC BY 4.0 · Open · [Files](https://huggingface.co/datasets/AmazonScience/massive/tree/main)
 - **[TRSAv1](https://huggingface.co/datasets/maydogan/Turkish_SentimentAnalysis_TRSAv1)** — Balanced positive, negative and neutral sentiment samples  
   2022 · 150,000 reviews: 50k positive, 50k negative, 50k neutral · 16.1 MB · Sentiment Analysis · Open · [Files](https://huggingface.co/datasets/maydogan/Turkish_SentimentAnalysis_TRSAv1/tree/main)
+- **[A semantically-annotated (based on UCCA) data set of 50 sentences from the METU-Sabancı treebank](https://github.com/necvabolucu/semantic-dataset)**  
+  2022 · 50 UCCA-annotated sentences · 167 KB · Dependency Parsing · Open
+- **[Another Twitter NER data set from Sabancı University](https://github.com/SU-NLP/SUNLP-Twitter-NER-Dataset)**  
+  2022 · 5,000 tweets · 394.6 KB · Named Entity Recognition · Apache-2.0 · Open
 - **[The Corpus of Turkish Youth Language (CoTY)](https://osf.io/ek4z8/)** — Spoken corpus of Turkish youth language  
   2022 · 168,748 tokens; 123 speakers · Language Resource / Modeling
+- **[A hate-speech data set from Aselsan](https://github.com/avaapm/hatespeech)** — Cross-domain Turkish-English hate-speech detection data  
+  2022 · 100,000 Turkish tweets (v1); 60,310 (v2) · 16.4 MB · Text Classification · CC BY-NC-SA 4.0 · Open
 - **[trnews-64](https://zenodo.org/records/5180654)**  
   2021-08 · 64M words · 123.4 MB · Language Modeling · CC BY 4.0 · Open
 - **[trwiki-67](https://zenodo.org/records/5213891)**  
@@ -253,7 +261,7 @@ Each entry reads **name** — description, then `release date · scale · size �
 - **[ParlaMint 2.1 (Turkish)](https://www.clarin.si/repository/xmlui/handle/11356/1432)** — Turkish parliamentary debate transcripts  
   2021-06 · 3,774,204 utterances (all languages) · 244.35 MB (Turkish subset) · Language Modeling · CC BY 4.0 · Open
 - **[A dataset for checking gender bias](https://github.com/NurIren/Gender-Bias-in-TR-to-EN-MT-Models)** — Gender bias in Turkish-English machine translation  
-  2021-04 · ~ 742 KB (GitHub repo) · Language Resource / Modeling · Open
+  2021-04 · 3.2 MB · Language Resource / Modeling · Open
 - **[RUEG](https://doi.org/10.5281/zenodo.11234583)** — Bilingual heritage-speaker elicited narratives  
   2021-04 · 23.4 GB (all languages) · Language Modeling · CC0 1.0 (Public Domain) · Open
 - **[IronyTR](https://github.com/teghub/IronyTR)**  
@@ -288,8 +296,14 @@ Each entry reads **name** — description, then `release date · scale · size �
   2020 · ~770k total; 4,503 Turkish pairs · ~ 44 KB (GitHub repo) · Summarization · CC BY-NC-SA 3.0 · Open
 - **[XCOPA (Turkish)](https://github.com/cambridgeltl/xcopa)** — Multilingual causal commonsense reasoning tasks  
   2020 · 600 Turkish items: 100 validation and 500 test · 185.3 MB (all languages) · Causal Commonsense Reasoning · CC BY 4.0 · Open · [Files](https://huggingface.co/datasets/cambridgeltl/xcopa)
+- **[#Turki$hTweets](https://github.com/atubakoksal/annotated_tweets)**  
+  2020 · 2,000 annotated tweets · 557.8 KB · Text Normalization · Open
+- **[Another, earlier, irony dataset (precursor of IronyTR)](https://github.com/teghub/Turkish-Irony-Dataset)** — Irony detection in Turkish social media  
+  2020 · 220 sentences (110 ironic) · 10.1 KB · Irony Detection · Open
 - **[CC-100 Turkish](https://data.statmt.org/cc-100/)** — Turkish monolingual web-crawled text corpus  
   2020 · 5.4 GB (Turkish subset) · Language Modeling · Open
+- **[CCAligned](https://opus.nlpl.eu/datasets/CCAligned)** — Aligned English-Turkish parallel web-document corpus  
+  2020 · 13,650,311 aligned pairs (largest listed Turkish pair) · 1.13 GB · Machine Translation · Open · [Files](https://object.pouta.csc.fi/OPUS-CCAligned/v1/moses/en-tr.txt.zip)
 - **[Cross Lingual Word Embeddings for Turkic Languages](https://github.com/elmurod1202/crosLingWordEmbTurk)** — Bilingual dictionaries for Turkic language embeddings  
   2020 · 9,350-entry Turkish-English dictionary · Lexical Resource · Open
 - **[MNLI-TR](https://huggingface.co/datasets/boun-tabi/nli_tr)** — Machine-translated multi-genre Turkish NLI pairs  
@@ -305,7 +319,7 @@ Each entry reads **name** — description, then `release date · scale · size �
 - **[Multilingual ATIS](https://catalog.ldc.upenn.edu/LDC2019T04)**  
   2019-02 · 5,871 utterances (all languages) · Intent Classification; Slot Filling · LDC User Agreement · Paid
 - **[A data set for NER and Stance detection](https://github.com/dkucuk/Tweet-Dataset-NER-SD)** — Named-entity recognition and stance detection in tweets  
-  2019-01 · 1,065 tweets · ~ 88 KB (GitHub repo) · Named Entity Recognition · Open
+  2019-01 · 1,065 tweets · 74.6 KB · Named Entity Recognition · Open
 - **[TEL](https://journals.tubitak.gov.tr/elektrik/vol27/iss2/40/)** — Lexicon-based Turkish emotion analysis  
   2019 · 25,989 documents (TREMO) · Lexical Resource · Open
 - **[WikiANN (Turkish)](https://huggingface.co/datasets/unimelb-nlp/wikiann)** — Named-entity tags for Turkish tokens  
@@ -332,6 +346,8 @@ Each entry reads **name** — description, then `release date · scale · size �
   2018 · 1.3 GB · Language Modeling · Open · [Files](https://github.com/onurgu/turkish-parliament-texts/releases)
 - **[XNLI](https://github.com/facebookresearch/XNLI)** — Cross-lingual natural language inference pairs  
   2018 · 112,500 total; 7,500 Turkish pairs · ~ 11 KB (GitHub repo) · Natural Language Inference · CC BY-NC 4.0 · Open · [Files](https://dl.fbaipublicfiles.com/XNLI/XNLI-1.0.zip)
+- **[A small code-switching corpus of Turkish-English](https://github.com/zeynepyirmibes/code-switching-tr-en)**  
+  2018 · 390 sentences · 99 KB · Language Resource / Modeling · Open
 - **[Bianet](https://opus.nlpl.eu/datasets/Bianet)** — Turkish-Kurdish-English parallel news corpus  
   2018 · 34,770 Turkish-English sentence pairs · Machine Translation · CC-BY-SA-4.0 · Open
 - **[NRC-VAD](http://saifmohammad.com/WebPages/nrc-vad.html)** — Valence-arousal-dominance word scores, Turkish-translated  
@@ -342,6 +358,8 @@ Each entry reads **name** — description, then `release date · scale · size �
   2017-12 · 698 blacklisted words and phrases · ~ 14 KB (GitHub repo) · Content Moderation · CC BY-SA 4.0 · Open
 - **[A sentiment analysis data set (from Başkent Uni.)](https://baskent.edu.tr/~msert/research/datasets/SentimentDatasetTR.html)** — Turkish Twitter sentiment classification corpus  
   2017 · Sentiment Analysis · Application Required
+- **[CoNLL-2017](https://lindat.mff.cuni.cz/repository/handle/11234/1-1989)** — Automatically annotated raw text and embeddings  
+  2017 · 29.8 GB · Language Resource / Modeling · CC BY-NC-SA 4.0 · Open · [Files](https://lindat.mff.cuni.cz/repository/server/api/core/bitstreams/779e7458-8881-4537-8f8c-54ac1ce49125/content)
 - **[TWNERTC](https://data.mendeley.com/datasets/cdcztymf4k/1)** — Wikipedia sentences auto-annotated via large-scale gazetteers  
   2017 · 532,629 annotated examples · 195 MB (Turkish subset) · Named Entity Recognition; Text Classification · CC BY 4.0 · Open
 - **[Linguistic Features in Turkish Word Representations](https://github.com/onurgu/linguistic-features-in-turkish-word-representations/releases/tag/v1.0)** — Turkish morphological word-analogy pairs  
@@ -350,6 +368,8 @@ Each entry reads **name** — description, then `release date · scale · size �
   2016-09 · 1,002 Turkish sentence pairs · 227 KB · Language Resource / Modeling · Open
 - **[UD Turkish IMST](https://universaldependencies.org/treebanks/tr_imst/index.html)**  
   2016 · 5,635 sentences; 56,422 tokens; 58,096 syntactic words · ~ 17.0 MB (GitHub repo) · Dependency Parsing · CC BY-NC-SA 3.0 · Open · [Files](https://github.com/UniversalDependencies/UD_Turkish-IMST)
+- **[A NER data from METU](https://github.com/dkucuk/NER-Turkish-News)** — Named-entity recognition in Turkish news  
+  2016 · 1,425 entity annotations · 9.9 KB · Named Entity Recognition · Open
 - **[A POS tagged data set of Turkish-German code switching](https://www.ims.uni-stuttgart.de/documents/team/ozlem/LAW2016.html)** — POS-tagged Turkish-German code-switching tweets  
   2016 · Language Resource / Modeling · Open
 - **[SemEval2016task5](https://alt.qcri.org/semeval2016/task5/)** — Turkish restaurant and telecom reviews  
@@ -404,12 +424,24 @@ Each entry reads **name** — description, then `release date · scale · size �
   1996 · 283K Turkish words across two subcorpora · Language Modeling · Paid
 - **[6 Şubat Tweets](https://tscorpus.com/corpora)**  
   4.9 million tokens · Social Media Analysis · Registration Required
+- **[BabelNet](https://babelnet.org/)** — Multilingual encyclopedic dictionary semantic network  
+  Language Resource / Modeling · BabelNet Non-Commercial license · Application Required
 - **[CCMatrix](https://opus.nlpl.eu/datasets/CCMatrix)** — Web-mined multilingual parallel sentence pairs  
   47,045,956 Turkish-English sentence pairs · 3.0 GB · Machine Translation · Open
+- **[CHILDES (Turkish)](https://talkbank.org/childes/access/Other/Turkish/)** — Turkish child language acquisition corpora  
+  34 children across two corpora (Aksu, Altınkamış) · Child Language · Open
 - **[CHILDES/Aksu](https://talkbank.org/childes/access/Other/Turkish/Aksu.html)** — Turkish child-adult conversation transcripts 1972-1973  
   33 children, ages 2;0-4;8 · Language Modeling · CC BY-NC-SA 3.0 · Registration Required
+- **[Columns Corpus V2](https://tscorpus.com/corpora)** — Turkish newspaper opinion columns, gender-balanced  
+  28+ million tokens; 25,915 columns · Language Modeling · Registration Required
 - **[ConceptNet](https://conceptnet.io/)** — Multilingual semantic network knowledge graph  
   Language Resource / Modeling · CC BY-SA 4.0 · Open
+- **[ConceptNet Numberbatch](https://github.com/commonsense/conceptnet-numberbatch)**  
+  51,308 Turkish entries · Language Resource / Modeling · CC BY-SA 4.0 · Open
+- **[Confess Corpus](https://tscorpus.com/corpora)** — Anonymous posts from a Turkish confession forum  
+  450,000+ tokens; 15,053 confessions · Social Media Analysis · Registration Required
+- **[Covid-19 TweetS](https://tscorpus.com/corpora)** — Turkish tweets from early Covid-19 pandemic  
+  7.5+ million tokens · Social Media Analysis · Registration Required
 - **[Gender identification on Twitter](https://cloud.iyte.edu.tr/index.php/s/5DhqdlUCCdB60qG)** — Turkish Twitter gender-labeled dataset  
   23.5 MB · Language Resource / Modeling · Open
 - **[GLOBAL Multilingual Lexical Data - Monolingual - Level 1](https://catalog.elra.info/en-us/repository/browse/ELRA-M0111_01/)** — Lexicographic word entries across 25 languages  
@@ -449,6 +481,8 @@ Each entry reads **name** — description, then `release date · scale · size �
   2023 · 6,491 Turkish pronunciation entries · Pronunciation Lexicon · ELRA VAR · Paid
 - **[MediaSpeech Turkish v1.1 (SLR108)](https://www.openslr.org/108/)**  
   2021 · 10 hours of Turkish media speech · 618 MB · Automatic Speech Recognition · CC BY 4.0 · Open · [Files](https://www.openslr.org/resources/108/TR.tgz)
+- **[CoVoST 2](https://github.com/facebookresearch/covost)** — Multilingual speech-to-text translation corpus  
+  2020-07 · 281 KB (tr-en translations) · Language Resource / Modeling · CC0 1.0 · Open
 - **[VoxLingua107 (Turkish)](https://huggingface.co/datasets/TalTechNLP/voxlingua107_wds)** — Speech data for language-identification models  
   2020 · 6,628 h total; ~59 h Turkish · ~ 6.9 GB (Turkish subset) · Language Identification · CC BY 4.0 · Open · [Files](https://huggingface.co/datasets/TalTechNLP/voxlingua107_wds/tree/main)
 - **[2011 NIST Language Recognition Evaluation Test Set](https://catalog.ldc.upenn.edu/LDC2018S06)** — Multilingual telephone and broadcast speech for language identification  

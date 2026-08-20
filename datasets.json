@@ -511,7 +511,7 @@
   "sourceUrl": "https://github.com/dkucuk/Tweet-Dataset-NER-SD",
   "downloadLabel": "",
   "downloadUrl": "",
-  "size": "~ 88 KB (GitHub repo)",
+  "size": "74.6 KB",
   "scale": "1,065 tweets",
   "task": "Named Entity Recognition",
   "license": "",
@@ -525,9 +525,23 @@
   "sourceUrl": "https://github.com/NurIren/Gender-Bias-in-TR-to-EN-MT-Models",
   "downloadLabel": "",
   "downloadUrl": "",
-  "size": "~ 742 KB (GitHub repo)",
+  "size": "3.2 MB",
   "scale": "",
   "task": "Language Resource / Modeling",
+  "license": "",
+  "access": "Open"
+ },
+ {
+  "released": "2016",
+  "dataset": "A NER data from METU",
+  "category": "Text, NLP & LLM",
+  "description": "Named-entity recognition in Turkish news",
+  "sourceUrl": "https://github.com/dkucuk/NER-Turkish-News",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "9.9 KB",
+  "scale": "1,425 entity annotations",
+  "task": "Named Entity Recognition",
   "license": "",
   "access": "Open"
  },
@@ -542,6 +556,20 @@
   "size": "",
   "scale": "",
   "task": "Language Resource / Modeling",
+  "license": "",
+  "access": "Open"
+ },
+ {
+  "released": "2022",
+  "dataset": "A semantically-annotated (based on UCCA) data set of 50 sentences from the METU-Sabancı treebank",
+  "category": "Text, NLP & LLM",
+  "description": "",
+  "sourceUrl": "https://github.com/necvabolucu/semantic-dataset",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "167 KB",
+  "scale": "50 UCCA-annotated sentences",
+  "task": "Dependency Parsing",
   "license": "",
   "access": "Open"
  },
@@ -574,6 +602,20 @@
   "access": "Open"
  },
  {
+  "released": "2018",
+  "dataset": "A small code-switching corpus of Turkish-English",
+  "category": "Text, NLP & LLM",
+  "description": "",
+  "sourceUrl": "https://github.com/zeynepyirmibes/code-switching-tr-en",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "99 KB",
+  "scale": "390 sentences",
+  "task": "Language Resource / Modeling",
+  "license": "",
+  "access": "Open"
+ },
+ {
   "released": "2014",
   "dataset": "A Twitter NER data set",
   "category": "Text, NLP & LLM",
@@ -584,6 +626,20 @@
   "size": "12.9 KB (compressed archive)",
   "scale": "868 tweets; 1,322 entity annotations",
   "task": "Named Entity Recognition",
+  "license": "",
+  "access": "Open"
+ },
+ {
+  "released": "2023",
+  "dataset": "A Twitter offensive language data set with context",
+  "category": "Text, NLP & LLM",
+  "description": "Offensive language detection in tweets, with context",
+  "sourceUrl": "https://github.com/boun-tabi/CovidOffensiveLanguageUltimateDatasets",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "4.1 MB",
+  "scale": "28,808 tweet-reply pairs",
+  "task": "Text Classification",
   "license": "",
   "access": "Open"
  },
@@ -627,6 +683,48 @@
   "scale": "5,579 Turkish rows",
   "task": "Instruction Tuning",
   "license": "MIT",
+  "access": "Open"
+ },
+ {
+  "released": "2022",
+  "dataset": "Another Twitter NER data set from Sabancı University",
+  "category": "Text, NLP & LLM",
+  "description": "",
+  "sourceUrl": "https://github.com/SU-NLP/SUNLP-Twitter-NER-Dataset",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "394.6 KB",
+  "scale": "5,000 tweets",
+  "task": "Named Entity Recognition",
+  "license": "Apache-2.0",
+  "access": "Open"
+ },
+ {
+  "released": "2020",
+  "dataset": "#Turki$hTweets",
+  "category": "Text, NLP & LLM",
+  "description": "",
+  "sourceUrl": "https://github.com/atubakoksal/annotated_tweets",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "557.8 KB",
+  "scale": "2,000 annotated tweets",
+  "task": "Text Normalization",
+  "license": "",
+  "access": "Open"
+ },
+ {
+  "released": "2020",
+  "dataset": "Another, earlier, irony dataset (precursor of IronyTR)",
+  "category": "Text, NLP & LLM",
+  "description": "Irony detection in Turkish social media",
+  "sourceUrl": "https://github.com/teghub/Turkish-Irony-Dataset",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "10.1 KB",
+  "scale": "220 sentences (110 ironic)",
+  "task": "Irony Detection",
+  "license": "",
   "access": "Open"
  },
  {
@@ -684,6 +782,20 @@
   "task": "Named Entity Recognition",
   "license": "CC BY-NC 4.0",
   "access": "Open"
+ },
+ {
+  "released": "",
+  "dataset": "BabelNet",
+  "category": "Text, NLP & LLM",
+  "description": "Multilingual encyclopedic dictionary semantic network",
+  "sourceUrl": "https://babelnet.org/",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "",
+  "scale": "",
+  "task": "Language Resource / Modeling",
+  "license": "BabelNet Non-Commercial license",
+  "access": "Application Required"
  },
  {
   "released": "2023-04",
@@ -896,6 +1008,20 @@
   "access": "Open"
  },
  {
+  "released": "2020",
+  "dataset": "CCAligned",
+  "category": "Text, NLP & LLM",
+  "description": "Aligned English-Turkish parallel web-document corpus",
+  "sourceUrl": "https://opus.nlpl.eu/datasets/CCAligned",
+  "downloadLabel": "Files",
+  "downloadUrl": "https://object.pouta.csc.fi/OPUS-CCAligned/v1/moses/en-tr.txt.zip",
+  "size": "1.13 GB",
+  "scale": "13,650,311 aligned pairs (largest listed Turkish pair)",
+  "task": "Machine Translation",
+  "license": "",
+  "access": "Open"
+ },
+ {
   "released": "",
   "dataset": "CCMatrix",
   "category": "Text, NLP & LLM",
@@ -921,6 +1047,20 @@
   "scale": "82,353 Turkish rows",
   "task": "Instruction Tuning",
   "license": "Apache-2.0",
+  "access": "Open"
+ },
+ {
+  "released": "",
+  "dataset": "CHILDES (Turkish)",
+  "category": "Text, NLP & LLM",
+  "description": "Turkish child language acquisition corpora",
+  "sourceUrl": "https://talkbank.org/childes/access/Other/Turkish/",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "",
+  "scale": "34 children across two corpora (Aksu, Altınkamış)",
+  "task": "Child Language",
+  "license": "",
   "access": "Open"
  },
  {
@@ -980,6 +1120,20 @@
   "access": "Paid"
  },
  {
+  "released": "",
+  "dataset": "Columns Corpus V2",
+  "category": "Text, NLP & LLM",
+  "description": "Turkish newspaper opinion columns, gender-balanced",
+  "sourceUrl": "https://tscorpus.com/corpora",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "",
+  "scale": "28+ million tokens; 25,915 columns",
+  "task": "Language Modeling",
+  "license": "",
+  "access": "Registration Required"
+ },
+ {
   "released": "2025-05",
   "dataset": "Compilation of Bilkent Turkish Writings Dataset",
   "category": "Text, NLP & LLM",
@@ -1005,6 +1159,48 @@
   "scale": "",
   "task": "Language Resource / Modeling",
   "license": "CC BY-SA 4.0",
+  "access": "Open"
+ },
+ {
+  "released": "",
+  "dataset": "ConceptNet Numberbatch",
+  "category": "Text, NLP & LLM",
+  "description": "",
+  "sourceUrl": "https://github.com/commonsense/conceptnet-numberbatch",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "",
+  "scale": "51,308 Turkish entries",
+  "task": "Language Resource / Modeling",
+  "license": "CC BY-SA 4.0",
+  "access": "Open"
+ },
+ {
+  "released": "",
+  "dataset": "Confess Corpus",
+  "category": "Text, NLP & LLM",
+  "description": "Anonymous posts from a Turkish confession forum",
+  "sourceUrl": "https://tscorpus.com/corpora",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "",
+  "scale": "450,000+ tokens; 15,053 confessions",
+  "task": "Social Media Analysis",
+  "license": "",
+  "access": "Registration Required"
+ },
+ {
+  "released": "2017",
+  "dataset": "CoNLL-2017",
+  "category": "Text, NLP & LLM",
+  "description": "Automatically annotated raw text and embeddings",
+  "sourceUrl": "https://lindat.mff.cuni.cz/repository/handle/11234/1-1989",
+  "downloadLabel": "Files",
+  "downloadUrl": "https://lindat.mff.cuni.cz/repository/server/api/core/bitstreams/779e7458-8881-4537-8f8c-54ac1ce49125/content",
+  "size": "29.8 GB",
+  "scale": "",
+  "task": "Language Resource / Modeling",
+  "license": "CC BY-NC-SA 4.0",
   "access": "Open"
  },
  {
@@ -1034,6 +1230,20 @@
   "task": "Language Resource / Modeling",
   "license": "",
   "access": ""
+ },
+ {
+  "released": "",
+  "dataset": "Covid-19 TweetS",
+  "category": "Text, NLP & LLM",
+  "description": "Turkish tweets from early Covid-19 pandemic",
+  "sourceUrl": "https://tscorpus.com/corpora",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "",
+  "scale": "7.5+ million tokens",
+  "task": "Social Media Analysis",
+  "license": "",
+  "access": "Registration Required"
  },
  {
   "released": "2020",
@@ -2842,6 +3052,20 @@
   "access": "Open"
  },
  {
+  "released": "2022",
+  "dataset": "A hate-speech data set from Aselsan",
+  "category": "Text, NLP & LLM",
+  "description": "Cross-domain Turkish-English hate-speech detection data",
+  "sourceUrl": "https://github.com/avaapm/hatespeech",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "16.4 MB",
+  "scale": "100,000 Turkish tweets (v1); 60,310 (v2)",
+  "task": "Text Classification",
+  "license": "CC BY-NC-SA 4.0",
+  "access": "Open"
+ },
+ {
   "released": "2025-09",
   "dataset": "FinePDFs",
   "category": "Text, NLP & LLM",
@@ -3078,6 +3302,20 @@
   "task": "Lexical Resource",
   "license": "ELRA END USER",
   "access": "Paid"
+ },
+ {
+  "released": "2020-07",
+  "dataset": "CoVoST 2",
+  "category": "Speech & Audio",
+  "description": "Multilingual speech-to-text translation corpus",
+  "sourceUrl": "https://github.com/facebookresearch/covost",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "281 KB (tr-en translations)",
+  "scale": "",
+  "task": "Language Resource / Modeling",
+  "license": "CC0 1.0",
+  "access": "Open"
  },
  {
   "released": "2005",
