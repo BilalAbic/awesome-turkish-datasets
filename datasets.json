@@ -154,6 +154,20 @@
   "access": "Open"
  },
  {
+  "released": "2010",
+  "dataset": "English-Swedish-Turkish Corpus",
+  "category": "Text, NLP & LLM",
+  "description": "",
+  "sourceUrl": "https://researchdata.se/en/catalogue/dataset/ext0078-1",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "",
+  "scale": "~300,000 Swedish; 160,000 Turkish; 150,000 English tokens",
+  "task": "Machine Translation",
+  "license": "",
+  "access": "Application Required"
+ },
+ {
   "released": "2020",
   "dataset": "KeNet",
   "category": "Text, NLP & LLM",
@@ -393,6 +407,20 @@
  },
  {
   "released": "2012",
+  "dataset": "TS Corpus V2",
+  "category": "Text, NLP & LLM",
+  "description": "",
+  "sourceUrl": "https://tscorpus.com/corpora",
+  "downloadLabel": "Files",
+  "downloadUrl": "https://cqpweb.tscorpus.com/cqpweb/ts_corpus_ver_2/",
+  "size": "",
+  "scale": "491 million tokens",
+  "task": "Corpus Query; Language Modeling",
+  "license": "",
+  "access": "Registration Required"
+ },
+ {
+  "released": "2012",
   "dataset": "Turkish National Corpus (TNC)",
   "category": "Text, NLP & LLM",
   "description": "",
@@ -434,6 +462,20 @@
   "access": "Paid"
  },
  {
+  "released": "",
+  "dataset": "6 Şubat Tweets",
+  "category": "Text, NLP & LLM",
+  "description": "",
+  "sourceUrl": "https://tscorpus.com/corpora",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "",
+  "scale": "4.9 million tokens",
+  "task": "Social Media Analysis",
+  "license": "",
+  "access": "Registration Required"
+ },
+ {
   "released": "2004",
   "dataset": "75 News",
   "category": "Text, NLP & LLM",
@@ -444,6 +486,48 @@
   "size": "340 KB",
   "scale": "75 news articles across 5 topics",
   "task": "Text Classification",
+  "license": "",
+  "access": "Open"
+ },
+ {
+  "released": "2013",
+  "dataset": "A code-switching corpus of Turkish-Dutch",
+  "category": "Text, NLP & LLM",
+  "description": "Turkish-Dutch online forum language identification",
+  "sourceUrl": "https://aclanthology.org/D13-1084/",
+  "downloadLabel": "Files",
+  "downloadUrl": "https://www.dongnguyen.nl/data.html",
+  "size": "",
+  "scale": "",
+  "task": "Language Resource / Modeling",
+  "license": "",
+  "access": "Application Required"
+ },
+ {
+  "released": "2019-01",
+  "dataset": "A data set for NER and Stance detection",
+  "category": "Text, NLP & LLM",
+  "description": "Named-entity recognition and stance detection in tweets",
+  "sourceUrl": "https://github.com/dkucuk/Tweet-Dataset-NER-SD",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "~ 88 KB (GitHub repo)",
+  "scale": "1,065 tweets",
+  "task": "Named Entity Recognition",
+  "license": "",
+  "access": "Open"
+ },
+ {
+  "released": "2021-04",
+  "dataset": "A dataset for checking gender bias",
+  "category": "Text, NLP & LLM",
+  "description": "Gender bias in Turkish-English machine translation",
+  "sourceUrl": "https://github.com/NurIren/Gender-Bias-in-TR-to-EN-MT-Models",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "~ 742 KB (GitHub repo)",
+  "scale": "",
+  "task": "Language Resource / Modeling",
   "license": "",
   "access": "Open"
  },
@@ -460,6 +544,20 @@
   "task": "Language Resource / Modeling",
   "license": "",
   "access": "Open"
+ },
+ {
+  "released": "2017",
+  "dataset": "A sentiment analysis data set (from Başkent Uni.)",
+  "category": "Text, NLP & LLM",
+  "description": "Turkish Twitter sentiment classification corpus",
+  "sourceUrl": "https://baskent.edu.tr/~msert/research/datasets/SentimentDatasetTR.html",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "",
+  "scale": "",
+  "task": "Sentiment Analysis",
+  "license": "",
+  "access": "Application Required"
  },
  {
   "released": "2013",
@@ -1302,6 +1400,48 @@
   "access": "Open"
  },
  {
+  "released": "2018-11",
+  "dataset": "kde4",
+  "category": "Text, NLP & LLM",
+  "description": "Parallel translation sentence pairs",
+  "sourceUrl": "https://github.com/maidis/turkish-parallel-corpora/tree/master/kde4",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "6.9 MB",
+  "scale": "23,219 sentence pairs",
+  "task": "Machine Translation",
+  "license": "",
+  "access": "Open"
+ },
+ {
+  "released": "2018-11",
+  "dataset": "kde5",
+  "category": "Text, NLP & LLM",
+  "description": "Parallel translation sentence pairs",
+  "sourceUrl": "https://github.com/maidis/turkish-parallel-corpora/tree/master/kde5",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "43.6 MB",
+  "scale": "131,656 sentence pairs",
+  "task": "Machine Translation",
+  "license": "",
+  "access": "Open"
+ },
+ {
+  "released": "2019",
+  "dataset": "Leipzig corpora",
+  "category": "Text, NLP & LLM",
+  "description": "Turkish web-text sentence corpus",
+  "sourceUrl": "https://corpora.uni-leipzig.de/en?corpusId=tur-tr_web_2019",
+  "downloadLabel": "Files",
+  "downloadUrl": "https://downloads.wortschatz-leipzig.de/corpora/tur-tr_web_2019_1M.tar.gz",
+  "size": "219.8 MB (1M-sentence sample)",
+  "scale": "51,031,775 Turkish sentences, 728,050,937 tokens (tur-tr_web_2019 web corpus)",
+  "task": "Language Resource / Modeling",
+  "license": "CC BY",
+  "access": ""
+ },
+ {
   "released": "2024-03",
   "dataset": "Lima Turkish",
   "category": "Text, NLP & LLM",
@@ -1326,6 +1466,20 @@
   "size": "",
   "scale": "15,133 noun and 14,231 verb inflection analogies",
   "task": "Morphological Analysis",
+  "license": "",
+  "access": "Open"
+ },
+ {
+  "released": "2018-11",
+  "dataset": "lonweb",
+  "category": "Text, NLP & LLM",
+  "description": "Parallel translation sentence pairs",
+  "sourceUrl": "https://github.com/maidis/turkish-parallel-corpora/tree/master/lonweb",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "172 KB",
+  "scale": "467 sentence pairs",
+  "task": "Machine Translation",
   "license": "",
   "access": "Open"
  },
@@ -1356,6 +1510,20 @@
   "task": "Lexical Resource",
   "license": "ELRA END USER / ELRA VAR",
   "access": "Paid"
+ },
+ {
+  "released": "2023",
+  "dataset": "MADAR-Turk",
+  "category": "Text, NLP & LLM",
+  "description": "Arabic-dialect sentences translated to Turkish",
+  "sourceUrl": "https://nyuad.nyu.edu/en/research/faculty-labs-and-projects/computational-approaches-to-modeling-language-lab/resources.html",
+  "downloadLabel": "Files",
+  "downloadUrl": "https://docs.google.com/forms/d/1Vje0ZJk2p6JxT2X3m4780c8PuALsjASnCX9T0ZT4fg8/viewform",
+  "size": "",
+  "scale": "2,000 Turkish-translated sentences",
+  "task": "Language Resource / Modeling",
+  "license": "",
+  "access": "Application Required"
  },
  {
   "released": "2024-01",
@@ -1440,6 +1608,20 @@
   "task": "Instruction Tuning",
   "license": "Apache-2.0",
   "access": "Open"
+ },
+ {
+  "released": "2002",
+  "dataset": "METU Turkish Corpus (MTC)",
+  "category": "Text, NLP & LLM",
+  "description": "",
+  "sourceUrl": "https://ii.metu.edu.tr/metu-corpora-research-group",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "",
+  "scale": "~2 million words; 10 genres",
+  "task": "Language Modeling",
+  "license": "Research use only",
+  "access": "Application Required"
  },
  {
   "released": "2020",
@@ -1736,6 +1918,20 @@
   "access": "Gated"
  },
  {
+  "released": "",
+  "dataset": "Ottoman (local) newspapers",
+  "category": "Text, NLP & LLM",
+  "description": "Digitized Ottoman-era provincial newspapers",
+  "sourceUrl": "https://www.osmanlicagazeteler.org/",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "",
+  "scale": "346 newspapers, 25,242 total pages (13,378 transcribed, ~53% complete)",
+  "task": "Language Resource / Modeling",
+  "license": "",
+  "access": "Registration Required"
+ },
+ {
   "released": "2026-01",
   "dataset": "ottoman-place-names-gazetteer",
   "category": "Text, NLP & LLM",
@@ -1834,6 +2030,34 @@
   "access": "Open"
  },
  {
+  "released": "2016",
+  "dataset": "SemEval2016task5",
+  "category": "Text, NLP & LLM",
+  "description": "Turkish restaurant and telecom reviews",
+  "sourceUrl": "https://alt.qcri.org/semeval2016/task5/",
+  "downloadLabel": "Files",
+  "downloadUrl": "https://alt.qcri.org/semeval2016/task5/index.php?id=data-and-tools",
+  "size": "",
+  "scale": "300 Turkish restaurant reviews; 3,000 Turkish telecom tweets",
+  "task": "Language Resource / Modeling",
+  "license": "Academic non-commercial (META-SHARE NC-NoReD)",
+  "access": "Registration Required"
+ },
+ {
+  "released": "2016",
+  "dataset": "SentiTurkNet",
+  "category": "Text, NLP & LLM",
+  "description": "Turkish polarity sentiment lexicon",
+  "sourceUrl": "http://myweb.sabanciuniv.edu/rdehkharghani/sentiturknet-3/",
+  "downloadLabel": "Files",
+  "downloadUrl": "http://myweb.sabanciuniv.edu/rdehkharghani/files/2023/12/SentiTurkNet.zip",
+  "size": "1.6 MB",
+  "scale": "",
+  "task": "Language Resource / Modeling",
+  "license": "",
+  "access": "Open"
+ },
+ {
   "released": "2023-12",
   "dataset": "sinefil-movie-revs",
   "category": "Text, NLP & LLM",
@@ -1888,6 +2112,48 @@
   "task": "Semantic Textual Similarity",
   "license": "CC BY-SA 4.0",
   "access": "Open"
+ },
+ {
+  "released": "",
+  "dataset": "Tatoeba Turkish Sentences",
+  "category": "Text, NLP & LLM",
+  "description": "Community-contributed multilingual translated sentences",
+  "sourceUrl": "https://tatoeba.org/en/downloads",
+  "downloadLabel": "Files",
+  "downloadUrl": "https://downloads.tatoeba.org/exports/per_language/tur/tur_sentences.tsv.bz2",
+  "size": "8.6 MB",
+  "scale": "749,030 sentences",
+  "task": "Machine Translation",
+  "license": "CC BY 2.0 FR",
+  "access": "Open"
+ },
+ {
+  "released": "2019",
+  "dataset": "TCL",
+  "category": "Text, NLP & LLM",
+  "description": "Automatically built Turkish connective lexicon",
+  "sourceUrl": "https://aclanthology.org/W19-3308/",
+  "downloadLabel": "Files",
+  "downloadUrl": "http://connective-lex.info/getfile.php?file=TCL.json",
+  "size": "76 KB",
+  "scale": "180 discourse connectives",
+  "task": "Language Resource / Modeling",
+  "license": "",
+  "access": "Open"
+ },
+ {
+  "released": "2012",
+  "dataset": "TDB",
+  "category": "Text, NLP & LLM",
+  "description": "Turkish discourse corpus with connective annotations",
+  "sourceUrl": "http://medid.ii.metu.edu.tr/index_eng.html",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "",
+  "scale": "500,000-word subcorpus of the METU Turkish Corpus",
+  "task": "Language Resource / Modeling",
+  "license": "",
+  "access": "Application Required"
  },
  {
   "released": "2009",
@@ -2198,6 +2464,34 @@
   "access": "Open"
  },
  {
+  "released": "2016",
+  "dataset": "Turkish Stop Words",
+  "category": "Text, NLP & LLM",
+  "description": "Common Turkish filler words list",
+  "sourceUrl": "https://github.com/ahmetax/trstop",
+  "downloadLabel": "Files",
+  "downloadUrl": "https://raw.githubusercontent.com/ahmetax/trstop/master/dosyalar/turkce-stop-words",
+  "size": "1.8 KB",
+  "scale": "285 stop words",
+  "task": "Lexical Resource",
+  "license": "MIT",
+  "access": "Open"
+ },
+ {
+  "released": "2022-12",
+  "dataset": "turkish-nlp-suite/ATIS Turkish",
+  "category": "Text, NLP & LLM",
+  "description": "Translated ATIS intents and entity slots",
+  "sourceUrl": "https://github.com/turkish-nlp-suite/Atis_Turkish",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "~ 1.7 MB (GitHub repo)",
+  "scale": "",
+  "task": "Intent and Slot Classification",
+  "license": "CC BY-SA 4.0",
+  "access": "Open"
+ },
+ {
   "released": "2026-02",
   "dataset": "Treebank-Benchmarking",
   "category": "Text, NLP & LLM",
@@ -2268,6 +2562,20 @@
   "access": "Open"
  },
  {
+  "released": "2025-10",
+  "dataset": "Türkçe Genel Kültür Soruları",
+  "category": "Text, NLP & LLM",
+  "description": "Synthetic question-answering pairs via Llama-4",
+  "sourceUrl": "https://huggingface.co/datasets/nisancoskun/turkish_general_knowledge_qa",
+  "downloadLabel": "Files",
+  "downloadUrl": "https://huggingface.co/datasets/nisancoskun/turkish_general_knowledge_qa/tree/main",
+  "size": "460.7 KB",
+  "scale": "1,000 question-answer pairs",
+  "task": "Instruction Tuning",
+  "license": "MIT",
+  "access": "Open"
+ },
+ {
   "released": "2024-05",
   "dataset": "Türkçe Masallar",
   "category": "Text, NLP & LLM",
@@ -2321,6 +2629,20 @@
   "scale": "639 Turkish rows",
   "task": "Instruction Tuning",
   "license": "AFL-3.0",
+  "access": "Open"
+ },
+ {
+  "released": "",
+  "dataset": "Ubuntu",
+  "category": "Text, NLP & LLM",
+  "description": "Ubuntu software localization translation strings",
+  "sourceUrl": "https://opus.nlpl.eu/datasets/Ubuntu",
+  "downloadLabel": "Files",
+  "downloadUrl": "https://object.pouta.csc.fi/OPUS-Ubuntu/v14.10/moses/en-tr.txt.zip",
+  "size": "188 KB",
+  "scale": "7,301 sentence pairs; 56.7K words (Moses en-tr)",
+  "task": "Machine Translation",
+  "license": "",
   "access": "Open"
  },
  {
@@ -2532,6 +2854,20 @@
   "task": "Language Modeling",
   "license": "ODC Attribution",
   "access": "Open"
+ },
+ {
+  "released": "2026-06",
+  "dataset": "Common Voice Scripted Speech 26.0 - Turkish",
+  "category": "Speech & Audio",
+  "description": "",
+  "sourceUrl": "https://mozilladatacollective.com/datasets/cmqinosfq00x4nr07gnk0rdf9",
+  "downloadLabel": "",
+  "downloadUrl": "",
+  "size": "2.99 GB",
+  "scale": "126,723 clips; 135.64 hours (130.1 validated); 1,829 speakers",
+  "task": "Automatic Speech Recognition",
+  "license": "CC0 1.0",
+  "access": "Registration Required"
  },
  {
   "released": "2025",
@@ -2797,6 +3133,20 @@
   "scale": "27,096 Turkish rows",
   "task": "Automatic Speech Recognition",
   "license": "CC BY-SA 3.0",
+  "access": "Open"
+ },
+ {
+  "released": "2024-12",
+  "dataset": "khanacademy-turkish-math",
+  "category": "Speech & Audio",
+  "description": "Turkish Khan Academy math audio transcriptions",
+  "sourceUrl": "https://huggingface.co/datasets/ysdede/khanacademy-turkish-math",
+  "downloadLabel": "Files",
+  "downloadUrl": "https://huggingface.co/datasets/ysdede/khanacademy-turkish-math/tree/main",
+  "size": "1.8 GB",
+  "scale": "42,836 rows",
+  "task": "Speech / Audio",
+  "license": "",
   "access": "Open"
  },
  {
@@ -3164,6 +3514,34 @@
   "access": "Open"
  },
  {
+  "released": "2025-04",
+  "dataset": "turkish-medical-vqa-evaluated",
+  "category": "Vision, OCR & Multimodal",
+  "description": "",
+  "sourceUrl": "https://huggingface.co/datasets/nezahatkorkmaz/turkish-medical-vqa-evaluated",
+  "downloadLabel": "Files",
+  "downloadUrl": "https://huggingface.co/datasets/nezahatkorkmaz/turkish-medical-vqa-evaluated/tree/main",
+  "size": "17.4 MB",
+  "scale": "3,515 rows",
+  "task": "Vision-Language",
+  "license": "",
+  "access": "Open"
+ },
+ {
+  "released": "2025-05",
+  "dataset": "unsloth-pmc-vqa-tr",
+  "category": "Vision, OCR & Multimodal",
+  "description": "Turkish medical VQA text; images not bundled",
+  "sourceUrl": "https://huggingface.co/datasets/nezahatkorkmaz/unsloth-pmc-vqa-tr",
+  "downloadLabel": "Files",
+  "downloadUrl": "https://huggingface.co/datasets/nezahatkorkmaz/unsloth-pmc-vqa-tr/tree/main",
+  "size": "244.6 MB",
+  "scale": "417,496 rows",
+  "task": "Vision-Language",
+  "license": "",
+  "access": "Open"
+ },
+ {
   "released": "2026-07",
   "dataset": "OpenITI-MAKHZAN Ottoman Lines (HF OttomanNLP)",
   "category": "Vision, OCR & Multimodal",
@@ -3206,6 +3584,20 @@
   "access": "Open"
  },
  {
+  "released": "2025-04",
+  "dataset": "turkish-image-description-datasetV2",
+  "category": "Vision, OCR & Multimodal",
+  "description": "Turkish translations of English image descriptions",
+  "sourceUrl": "https://huggingface.co/datasets/ozertuu/turkish-image-description-datasetV2",
+  "downloadLabel": "Files",
+  "downloadUrl": "https://huggingface.co/datasets/ozertuu/turkish-image-description-datasetV2/tree/main",
+  "size": "815.6 MB",
+  "scale": "19,610 rows",
+  "task": "Vision-Language",
+  "license": "",
+  "access": "Open"
+ },
+ {
   "released": "2024-10",
   "dataset": "PangeaIns",
   "category": "Vision, OCR & Multimodal",
@@ -3243,6 +3635,20 @@
   "downloadUrl": "https://huggingface.co/datasets/selimc/tr-textbook-ColPali/tree/main",
   "size": "269.4 MB",
   "scale": "2,999 rows",
+  "task": "Vision-Language",
+  "license": "",
+  "access": "Open"
+ },
+ {
+  "released": "2024-08",
+  "dataset": "VisIT-Bench-tr",
+  "category": "Vision, OCR & Multimodal",
+  "description": "",
+  "sourceUrl": "https://huggingface.co/datasets/TFLai/VisIT-Bench-tr",
+  "downloadLabel": "Files",
+  "downloadUrl": "https://huggingface.co/datasets/TFLai/VisIT-Bench-tr/tree/main",
+  "size": "335.4 MB",
+  "scale": "574 Turkish rows",
   "task": "Vision-Language",
   "license": "",
   "access": "Open"
@@ -3341,6 +3747,20 @@
   "downloadUrl": "https://huggingface.co/datasets/ucsahin/COCO-OD-TR-Single-Objects-v2/tree/main",
   "size": "21.6 GB",
   "scale": "153,128 Turkish rows",
+  "task": "Vision-Language",
+  "license": "",
+  "access": "Open"
+ },
+ {
+  "released": "2025-07",
+  "dataset": "PD12M-Turkish-Images-cleaned_37k",
+  "category": "Vision, OCR & Multimodal",
+  "description": "Turkish captions describing public domain images",
+  "sourceUrl": "https://huggingface.co/datasets/umarigan/PD12M-Turkish-Images-cleaned_37k",
+  "downloadLabel": "Files",
+  "downloadUrl": "https://huggingface.co/datasets/umarigan/PD12M-Turkish-Images-cleaned_37k/tree/main",
+  "size": "92.2 GB",
+  "scale": "37,711 rows",
   "task": "Vision-Language",
   "license": "",
   "access": "Open"
